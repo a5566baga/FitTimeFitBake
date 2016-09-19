@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BC4B39FC1D901A8700A678E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B39FB1D901A8700A678E7 /* main.m */; };
 		BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B39FE1D901A8700A678E7 /* AppDelegate.m */; };
-		BC4B3A021D901A8700A678E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B3A011D901A8700A678E7 /* ViewController.m */; };
 		BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A031D901A8700A678E7 /* Main.storyboard */; };
 		BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A061D901A8700A678E7 /* Assets.xcassets */; };
 		BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */; };
@@ -20,8 +19,6 @@
 		BC4B39FB1D901A8700A678E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC4B39FD1D901A8700A678E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC4B39FE1D901A8700A678E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BC4B3A001D901A8700A678E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BC4B3A011D901A8700A678E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BC4B3A041D901A8700A678E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC4B3A061D901A8700A678E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4B3A091D901A8700A678E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,14 +55,12 @@
 		BC4B39F91D901A8700A678E7 /* FitTimeFitBake */ = {
 			isa = PBXGroup;
 			children = (
-				BC4B39FD1D901A8700A678E7 /* AppDelegate.h */,
-				BC4B39FE1D901A8700A678E7 /* AppDelegate.m */,
-				BC4B3A001D901A8700A678E7 /* ViewController.h */,
-				BC4B3A011D901A8700A678E7 /* ViewController.m */,
-				BC4B3A031D901A8700A678E7 /* Main.storyboard */,
-				BC4B3A061D901A8700A678E7 /* Assets.xcassets */,
-				BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */,
-				BC4B3A0B1D901A8700A678E7 /* Info.plist */,
+				BC4B3A221D901D1900A678E7 /* 学烘焙 */,
+				BC4B3A161D901D1900A678E7 /* 烘焙圈 */,
+				BC4B3A1A1D901D1900A678E7 /* 团团 */,
+				BC4B3A1E1D901D1900A678E7 /* 问答 */,
+				BC4B3A111D901D1900A678E7 /* 个人 */,
+				BC4B3A151D901D1900A678E7 /* 工具类 */,
 				BC4B39FA1D901A8700A678E7 /* Supporting Files */,
 			);
 			path = FitTimeFitBake;
@@ -74,9 +69,193 @@
 		BC4B39FA1D901A8700A678E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC4B39FD1D901A8700A678E7 /* AppDelegate.h */,
+				BC4B39FE1D901A8700A678E7 /* AppDelegate.m */,
+				BC4B3A031D901A8700A678E7 /* Main.storyboard */,
+				BC4B3A061D901A8700A678E7 /* Assets.xcassets */,
+				BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */,
+				BC4B3A0B1D901A8700A678E7 /* Info.plist */,
 				BC4B39FB1D901A8700A678E7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC4B3A111D901D1900A678E7 /* 个人 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B3A121D901D1900A678E7 /* Controller */,
+				BC4B3A131D901D1900A678E7 /* Model */,
+				BC4B3A141D901D1900A678E7 /* View */,
+			);
+			path = "个人";
+			sourceTree = "<group>";
+		};
+		BC4B3A121D901D1900A678E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC4B3A131D901D1900A678E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC4B3A141D901D1900A678E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4B3A151D901D1900A678E7 /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B3A261D901E9400A678E7 /* DB */,
+				BC4B3A271D901E9400A678E7 /* tabBar */,
+			);
+			path = "工具类";
+			sourceTree = "<group>";
+		};
+		BC4B3A161D901D1900A678E7 /* 烘焙圈 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B3A171D901D1900A678E7 /* Controller */,
+				BC4B3A181D901D1900A678E7 /* Model */,
+				BC4B3A191D901D1900A678E7 /* View */,
+			);
+			path = "烘焙圈";
+			sourceTree = "<group>";
+		};
+		BC4B3A171D901D1900A678E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC4B3A181D901D1900A678E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC4B3A191D901D1900A678E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4B3A1A1D901D1900A678E7 /* 团团 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B3A1B1D901D1900A678E7 /* Controller */,
+				BC4B3A1C1D901D1900A678E7 /* Model */,
+				BC4B3A1D1D901D1900A678E7 /* View */,
+			);
+			path = "团团";
+			sourceTree = "<group>";
+		};
+		BC4B3A1B1D901D1900A678E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC4B3A1C1D901D1900A678E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC4B3A1D1D901D1900A678E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4B3A1E1D901D1900A678E7 /* 问答 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B3A1F1D901D1900A678E7 /* Controller */,
+				BC4B3A201D901D1900A678E7 /* Model */,
+				BC4B3A211D901D1900A678E7 /* View */,
+			);
+			path = "问答";
+			sourceTree = "<group>";
+		};
+		BC4B3A1F1D901D1900A678E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC4B3A201D901D1900A678E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC4B3A211D901D1900A678E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4B3A221D901D1900A678E7 /* 学烘焙 */ = {
+			isa = PBXGroup;
+			children = (
+				BC4B3A231D901D1900A678E7 /* Controller */,
+				BC4B3A241D901D1900A678E7 /* Model */,
+				BC4B3A251D901D1900A678E7 /* View */,
+			);
+			path = "学烘焙";
+			sourceTree = "<group>";
+		};
+		BC4B3A231D901D1900A678E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC4B3A241D901D1900A678E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC4B3A251D901D1900A678E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC4B3A261D901E9400A678E7 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BC4B3A271D901E9400A678E7 /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +328,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC4B3A021D901A8700A678E7 /* ViewController.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
 				BC4B39FC1D901A8700A678E7 /* main.m in Sources */,
 			);
