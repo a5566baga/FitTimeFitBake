@@ -7,14 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91268B2CFC7947B41EFEC7DA /* libPods-FitTimeFitBake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B8C5E1D671A69111FF3A3C /* libPods-FitTimeFitBake.a */; };
+		BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */; };
+		BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA71D93D2710045D564 /* MyHotButton.m */; };
+		BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */; };
+		BC1FFBAF1D93FF1A0045D564 /* new.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC1FFBAE1D93FF1A0045D564 /* new.gif */; };
+		BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBB11D9409320045D564 /* MyBigClassButton.m */; };
 		BC4B39FC1D901A8700A678E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B39FB1D901A8700A678E7 /* main.m */; };
 		BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B39FE1D901A8700A678E7 /* AppDelegate.m */; };
 		BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A031D901A8700A678E7 /* Main.storyboard */; };
 		BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A061D901A8700A678E7 /* Assets.xcassets */; };
 		BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */; };
+		BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F341D91605000D4D615 /* MyTabBarViewController.m */; };
+		BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F371D9160F000D4D615 /* MyNavigationViewController.m */; };
+		BCAB7F401D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F3B1D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m */; };
+		BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F3D1D91617200D4D615 /* UINavigationItem+MyNavItem.m */; };
+		BCAB7F421D91617200D4D615 /* UIView+MyPositionSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F3F1D91617200D4D615 /* UIView+MyPositionSize.m */; };
+		BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F451D91674F00D4D615 /* LearnBakeViewController.m */; };
+		BCAB7F491D91676200D4D615 /* BakeWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F481D91676200D4D615 /* BakeWayViewController.m */; };
+		BCAB7F4C1D91676D00D4D615 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F4B1D91676D00D4D615 /* ShoppingViewController.m */; };
+		BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F4E1D91677700D4D615 /* QuestionViewController.m */; };
+		BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F511D91678200D4D615 /* MeViewController.m */; };
+		BCAB7F571D917BCA00D4D615 /* AgencyFB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCAB7F541D917BCA00D4D615 /* AgencyFB.ttf */; };
+		BCAB7F581D917BCA00D4D615 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCAB7F551D917BCA00D4D615 /* BebasNeue.otf */; };
+		BCAB7F591D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = BCAB7F561D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF */; };
+		BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */; };
+		BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */; };
+		BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60B8C5E1D671A69111FF3A3C /* libPods-FitTimeFitBake.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FitTimeFitBake.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		915AFBA58995A8FA4CB304B0 /* Pods-FitTimeFitBake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTimeFitBake.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake.release.xcconfig"; sourceTree = "<group>"; };
+		BC1FFBA31D93C2F00045D564 /* MyFoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFoundButton.h; sourceTree = "<group>"; };
+		BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFoundButton.m; sourceTree = "<group>"; };
+		BC1FFBA61D93D2710045D564 /* MyHotButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHotButton.h; sourceTree = "<group>"; };
+		BC1FFBA71D93D2710045D564 /* MyHotButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHotButton.m; sourceTree = "<group>"; };
+		BC1FFBA91D93F97F0045D564 /* MyDayActityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDayActityButton.h; sourceTree = "<group>"; };
+		BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDayActityButton.m; sourceTree = "<group>"; };
+		BC1FFBAE1D93FF1A0045D564 /* new.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = new.gif; sourceTree = "<group>"; };
+		BC1FFBB01D9409320045D564 /* MyBigClassButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBigClassButton.h; sourceTree = "<group>"; };
+		BC1FFBB11D9409320045D564 /* MyBigClassButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBigClassButton.m; sourceTree = "<group>"; };
 		BC4B39F71D901A8700A678E7 /* FitTimeFitBake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTimeFitBake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4B39FB1D901A8700A678E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC4B39FD1D901A8700A678E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -23,6 +56,37 @@
 		BC4B3A061D901A8700A678E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4B3A091D901A8700A678E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4B3A0B1D901A8700A678E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAB7F331D91605000D4D615 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
+		BCAB7F341D91605000D4D615 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
+		BCAB7F361D9160F000D4D615 /* MyNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationViewController.h; sourceTree = "<group>"; };
+		BCAB7F371D9160F000D4D615 /* MyNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigationViewController.m; sourceTree = "<group>"; };
+		BCAB7F3A1D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MyBarButtonItem.h"; sourceTree = "<group>"; };
+		BCAB7F3B1D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MyBarButtonItem.m"; sourceTree = "<group>"; };
+		BCAB7F3C1D91617200D4D615 /* UINavigationItem+MyNavItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+MyNavItem.h"; sourceTree = "<group>"; };
+		BCAB7F3D1D91617200D4D615 /* UINavigationItem+MyNavItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+MyNavItem.m"; sourceTree = "<group>"; };
+		BCAB7F3E1D91617200D4D615 /* UIView+MyPositionSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MyPositionSize.h"; sourceTree = "<group>"; };
+		BCAB7F3F1D91617200D4D615 /* UIView+MyPositionSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MyPositionSize.m"; sourceTree = "<group>"; };
+		BCAB7F431D91617C00D4D615 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = "工具类/PrefixHeader.pch"; sourceTree = "<group>"; };
+		BCAB7F441D91674F00D4D615 /* LearnBakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeViewController.h; sourceTree = "<group>"; };
+		BCAB7F451D91674F00D4D615 /* LearnBakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeViewController.m; sourceTree = "<group>"; };
+		BCAB7F471D91676200D4D615 /* BakeWayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakeWayViewController.h; sourceTree = "<group>"; };
+		BCAB7F481D91676200D4D615 /* BakeWayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakeWayViewController.m; sourceTree = "<group>"; };
+		BCAB7F4A1D91676D00D4D615 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		BCAB7F4B1D91676D00D4D615 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
+		BCAB7F4D1D91677700D4D615 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		BCAB7F4E1D91677700D4D615 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		BCAB7F501D91678200D4D615 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		BCAB7F511D91678200D4D615 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		BCAB7F541D917BCA00D4D615 /* AgencyFB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AgencyFB.ttf; sourceTree = "<group>"; };
+		BCAB7F551D917BCA00D4D615 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		BCAB7F561D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正兰亭纤黑_GBK.TTF"; sourceTree = "<group>"; };
+		BCAB7F5A1D91864F00D4D615 /* LearnBakeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeModel.h; sourceTree = "<group>"; };
+		BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeModel.m; sourceTree = "<group>"; };
+		BCEE7CBA1D92A1AB0048DBBC /* LearnBakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeView.h; sourceTree = "<group>"; };
+		BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeView.m; sourceTree = "<group>"; };
+		BCEE7CBD1D92B17A0048DBBC /* LearnBakeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeTableViewCell.h; sourceTree = "<group>"; };
+		BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeTableViewCell.m; sourceTree = "<group>"; };
+		D91D8AF74C439ACF74930561 /* Pods-FitTimeFitBake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTimeFitBake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +94,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91268B2CFC7947B41EFEC7DA /* libPods-FitTimeFitBake.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1792130A70CED542003EEDF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B8C5E1D671A69111FF3A3C /* libPods-FitTimeFitBake.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22BB29DB1880B2D6B21767BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D91D8AF74C439ACF74930561 /* Pods-FitTimeFitBake.debug.xcconfig */,
+				915AFBA58995A8FA4CB304B0 /* Pods-FitTimeFitBake.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BC4B39EE1D901A8700A678E7 = {
 			isa = PBXGroup;
 			children = (
 				BC4B39F91D901A8700A678E7 /* FitTimeFitBake */,
 				BC4B39F81D901A8700A678E7 /* Products */,
+				22BB29DB1880B2D6B21767BF /* Pods */,
+				1792130A70CED542003EEDF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +145,7 @@
 				BC4B3A1E1D901D1900A678E7 /* 问答 */,
 				BC4B3A111D901D1900A678E7 /* 个人 */,
 				BC4B3A151D901D1900A678E7 /* 工具类 */,
+				BCAB7F431D91617C00D4D615 /* PrefixHeader.pch */,
 				BC4B39FA1D901A8700A678E7 /* Supporting Files */,
 			);
 			path = FitTimeFitBake;
@@ -69,6 +154,8 @@
 		BC4B39FA1D901A8700A678E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC1FFBAE1D93FF1A0045D564 /* new.gif */,
+				BCAB7F531D917BCA00D4D615 /* font */,
 				BC4B39FD1D901A8700A678E7 /* AppDelegate.h */,
 				BC4B39FE1D901A8700A678E7 /* AppDelegate.m */,
 				BC4B3A031D901A8700A678E7 /* Main.storyboard */,
@@ -93,6 +180,8 @@
 		BC4B3A121D901D1900A678E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F501D91678200D4D615 /* MeViewController.h */,
+				BCAB7F511D91678200D4D615 /* MeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -114,6 +203,7 @@
 		BC4B3A151D901D1900A678E7 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F391D91617200D4D615 /* category */,
 				BC4B3A261D901E9400A678E7 /* DB */,
 				BC4B3A271D901E9400A678E7 /* tabBar */,
 			);
@@ -133,6 +223,8 @@
 		BC4B3A171D901D1900A678E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F471D91676200D4D615 /* BakeWayViewController.h */,
+				BCAB7F481D91676200D4D615 /* BakeWayViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +256,8 @@
 		BC4B3A1B1D901D1900A678E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F4A1D91676D00D4D615 /* ShoppingViewController.h */,
+				BCAB7F4B1D91676D00D4D615 /* ShoppingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +289,8 @@
 		BC4B3A1F1D901D1900A678E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F4D1D91677700D4D615 /* QuestionViewController.h */,
+				BCAB7F4E1D91677700D4D615 /* QuestionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +322,8 @@
 		BC4B3A231D901D1900A678E7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F441D91674F00D4D615 /* LearnBakeViewController.h */,
+				BCAB7F451D91674F00D4D615 /* LearnBakeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +331,8 @@
 		BC4B3A241D901D1900A678E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F5A1D91864F00D4D615 /* LearnBakeModel.h */,
+				BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +340,18 @@
 		BC4B3A251D901D1900A678E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCEE7CBA1D92A1AB0048DBBC /* LearnBakeView.h */,
+				BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */,
+				BCEE7CBD1D92B17A0048DBBC /* LearnBakeTableViewCell.h */,
+				BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */,
+				BC1FFBA61D93D2710045D564 /* MyHotButton.h */,
+				BC1FFBA71D93D2710045D564 /* MyHotButton.m */,
+				BC1FFBA31D93C2F00045D564 /* MyFoundButton.h */,
+				BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */,
+				BC1FFBA91D93F97F0045D564 /* MyDayActityButton.h */,
+				BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */,
+				BC1FFBB01D9409320045D564 /* MyBigClassButton.h */,
+				BC1FFBB11D9409320045D564 /* MyBigClassButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,8 +366,35 @@
 		BC4B3A271D901E9400A678E7 /* tabBar */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7F331D91605000D4D615 /* MyTabBarViewController.h */,
+				BCAB7F341D91605000D4D615 /* MyTabBarViewController.m */,
+				BCAB7F361D9160F000D4D615 /* MyNavigationViewController.h */,
+				BCAB7F371D9160F000D4D615 /* MyNavigationViewController.m */,
 			);
 			path = tabBar;
+			sourceTree = "<group>";
+		};
+		BCAB7F391D91617200D4D615 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB7F3A1D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.h */,
+				BCAB7F3B1D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m */,
+				BCAB7F3C1D91617200D4D615 /* UINavigationItem+MyNavItem.h */,
+				BCAB7F3D1D91617200D4D615 /* UINavigationItem+MyNavItem.m */,
+				BCAB7F3E1D91617200D4D615 /* UIView+MyPositionSize.h */,
+				BCAB7F3F1D91617200D4D615 /* UIView+MyPositionSize.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		BCAB7F531D917BCA00D4D615 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB7F541D917BCA00D4D615 /* AgencyFB.ttf */,
+				BCAB7F551D917BCA00D4D615 /* BebasNeue.otf */,
+				BCAB7F561D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +404,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC4B3A0E1D901A8700A678E7 /* Build configuration list for PBXNativeTarget "FitTimeFitBake" */;
 			buildPhases = (
+				BAB529495CE489B9839A51BA /* [CP] Check Pods Manifest.lock */,
 				BC4B39F31D901A8700A678E7 /* Sources */,
 				BC4B39F41D901A8700A678E7 /* Frameworks */,
 				BC4B39F51D901A8700A678E7 /* Resources */,
+				B4F9B213AEA898D25ECF3619 /* [CP] Embed Pods Frameworks */,
+				227B02C4F0B6D5E0C83DEF9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,18 +460,87 @@
 				BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */,
 				BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */,
 				BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */,
+				BCAB7F591D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF in Resources */,
+				BC1FFBAF1D93FF1A0045D564 /* new.gif in Resources */,
+				BCAB7F581D917BCA00D4D615 /* BebasNeue.otf in Resources */,
+				BCAB7F571D917BCA00D4D615 /* AgencyFB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		227B02C4F0B6D5E0C83DEF9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4F9B213AEA898D25ECF3619 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB529495CE489B9839A51BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC4B39F31D901A8700A678E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAB7F4C1D91676D00D4D615 /* ShoppingViewController.m in Sources */,
+				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
+				BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
+				BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */,
+				BCAB7F491D91676200D4D615 /* BakeWayViewController.m in Sources */,
+				BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */,
+				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
+				BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */,
+				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
+				BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */,
+				BCAB7F421D91617200D4D615 /* UIView+MyPositionSize.m in Sources */,
+				BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */,
+				BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */,
 				BC4B39FC1D901A8700A678E7 /* main.m in Sources */,
+				BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */,
+				BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */,
+				BCAB7F401D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m in Sources */,
+				BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,8 +650,10 @@
 		};
 		BC4B3A0F1D901A8700A678E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91D8AF74C439ACF74930561 /* Pods-FitTimeFitBake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "FitTimeFitBake/工具类/PrefixHeader.pch";
 				INFOPLIST_FILE = FitTimeFitBake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.FitTimeFitBake;
@@ -450,8 +663,10 @@
 		};
 		BC4B3A101D901A8700A678E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915AFBA58995A8FA4CB304B0 /* Pods-FitTimeFitBake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "FitTimeFitBake/工具类/PrefixHeader.pch";
 				INFOPLIST_FILE = FitTimeFitBake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.FitTimeFitBake;
@@ -478,6 +693,7 @@
 				BC4B3A101D901A8700A678E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

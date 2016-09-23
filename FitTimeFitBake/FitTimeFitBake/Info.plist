@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>方正兰亭纤黑_GBK.TTF</string>
+		<string>AgencyFB.ttf</string>
+		<string>BebasNeue.otf</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>爱自己爱烘焙</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
