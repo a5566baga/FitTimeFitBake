@@ -11,8 +11,15 @@
 		BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */; };
 		BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA71D93D2710045D564 /* MyHotButton.m */; };
 		BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */; };
-		BC1FFBAF1D93FF1A0045D564 /* new.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC1FFBAE1D93FF1A0045D564 /* new.gif */; };
 		BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBB11D9409320045D564 /* MyBigClassButton.m */; };
+		BC1FFBDE1D95487C0045D564 /* BakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBDD1D95487C0045D564 /* BakeView.m */; };
+		BC1FFBE31D955E2A0045D564 /* new.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC1FFBE01D955E2A0045D564 /* new.gif */; };
+		BC1FFBE41D955E2A0045D564 /* shipu.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC1FFBE11D955E2A0045D564 /* shipu.gif */; };
+		BC1FFBE51D955E2A0045D564 /* zuopin.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC1FFBE21D955E2A0045D564 /* zuopin.gif */; };
+		BC1FFBE91D9562480045D564 /* NetDataDownLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBE81D9562480045D564 /* NetDataDownLoad.m */; };
+		BC1FFBEC1D956E8D0045D564 /* BakeWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBEB1D956E8D0045D564 /* BakeWayModel.m */; };
+		BC1FFBF21D9578620045D564 /* BakeWayHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBF11D9578620045D564 /* BakeWayHeaderView.m */; };
+		BC1FFBF51D9578FE0045D564 /* BakeWayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBF41D9578FE0045D564 /* BakeWayTableViewCell.m */; };
 		BC4B39FC1D901A8700A678E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B39FB1D901A8700A678E7 /* main.m */; };
 		BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4B39FE1D901A8700A678E7 /* AppDelegate.m */; };
 		BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A031D901A8700A678E7 /* Main.storyboard */; };
@@ -45,9 +52,21 @@
 		BC1FFBA71D93D2710045D564 /* MyHotButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHotButton.m; sourceTree = "<group>"; };
 		BC1FFBA91D93F97F0045D564 /* MyDayActityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDayActityButton.h; sourceTree = "<group>"; };
 		BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDayActityButton.m; sourceTree = "<group>"; };
-		BC1FFBAE1D93FF1A0045D564 /* new.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = new.gif; sourceTree = "<group>"; };
 		BC1FFBB01D9409320045D564 /* MyBigClassButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBigClassButton.h; sourceTree = "<group>"; };
 		BC1FFBB11D9409320045D564 /* MyBigClassButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBigClassButton.m; sourceTree = "<group>"; };
+		BC1FFBDC1D95487C0045D564 /* BakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakeView.h; sourceTree = "<group>"; };
+		BC1FFBDD1D95487C0045D564 /* BakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakeView.m; sourceTree = "<group>"; };
+		BC1FFBE01D955E2A0045D564 /* new.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = new.gif; sourceTree = "<group>"; };
+		BC1FFBE11D955E2A0045D564 /* shipu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shipu.gif; sourceTree = "<group>"; };
+		BC1FFBE21D955E2A0045D564 /* zuopin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = zuopin.gif; sourceTree = "<group>"; };
+		BC1FFBE71D9562480045D564 /* NetDataDownLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetDataDownLoad.h; sourceTree = "<group>"; };
+		BC1FFBE81D9562480045D564 /* NetDataDownLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetDataDownLoad.m; sourceTree = "<group>"; };
+		BC1FFBEA1D956E8C0045D564 /* BakeWayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakeWayModel.h; sourceTree = "<group>"; };
+		BC1FFBEB1D956E8D0045D564 /* BakeWayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakeWayModel.m; sourceTree = "<group>"; };
+		BC1FFBF01D9578620045D564 /* BakeWayHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakeWayHeaderView.h; sourceTree = "<group>"; };
+		BC1FFBF11D9578620045D564 /* BakeWayHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakeWayHeaderView.m; sourceTree = "<group>"; };
+		BC1FFBF31D9578FE0045D564 /* BakeWayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BakeWayTableViewCell.h; sourceTree = "<group>"; };
+		BC1FFBF41D9578FE0045D564 /* BakeWayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BakeWayTableViewCell.m; sourceTree = "<group>"; };
 		BC4B39F71D901A8700A678E7 /* FitTimeFitBake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTimeFitBake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4B39FB1D901A8700A678E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC4B39FD1D901A8700A678E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +137,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BC1FFBDF1D955E2A0045D564 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				BC1FFBE01D955E2A0045D564 /* new.gif */,
+				BC1FFBE11D955E2A0045D564 /* shipu.gif */,
+				BC1FFBE21D955E2A0045D564 /* zuopin.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		BC1FFBE61D95621C0045D564 /* NetWorkData */ = {
+			isa = PBXGroup;
+			children = (
+				BC1FFBE71D9562480045D564 /* NetDataDownLoad.h */,
+				BC1FFBE81D9562480045D564 /* NetDataDownLoad.m */,
+			);
+			path = NetWorkData;
+			sourceTree = "<group>";
+		};
 		BC4B39EE1D901A8700A678E7 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +192,7 @@
 		BC4B39FA1D901A8700A678E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BC1FFBAE1D93FF1A0045D564 /* new.gif */,
+				BC1FFBDF1D955E2A0045D564 /* gif */,
 				BCAB7F531D917BCA00D4D615 /* font */,
 				BC4B39FD1D901A8700A678E7 /* AppDelegate.h */,
 				BC4B39FE1D901A8700A678E7 /* AppDelegate.m */,
@@ -203,6 +241,7 @@
 		BC4B3A151D901D1900A678E7 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BC1FFBE61D95621C0045D564 /* NetWorkData */,
 				BCAB7F391D91617200D4D615 /* category */,
 				BC4B3A261D901E9400A678E7 /* DB */,
 				BC4B3A271D901E9400A678E7 /* tabBar */,
@@ -232,6 +271,8 @@
 		BC4B3A181D901D1900A678E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC1FFBEA1D956E8C0045D564 /* BakeWayModel.h */,
+				BC1FFBEB1D956E8D0045D564 /* BakeWayModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +280,12 @@
 		BC4B3A191D901D1900A678E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BC1FFBDC1D95487C0045D564 /* BakeView.h */,
+				BC1FFBDD1D95487C0045D564 /* BakeView.m */,
+				BC1FFBF01D9578620045D564 /* BakeWayHeaderView.h */,
+				BC1FFBF11D9578620045D564 /* BakeWayHeaderView.m */,
+				BC1FFBF31D9578FE0045D564 /* BakeWayTableViewCell.h */,
+				BC1FFBF41D9578FE0045D564 /* BakeWayTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -457,12 +504,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1FFBE51D955E2A0045D564 /* zuopin.gif in Resources */,
 				BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */,
 				BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */,
 				BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */,
 				BCAB7F591D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF in Resources */,
-				BC1FFBAF1D93FF1A0045D564 /* new.gif in Resources */,
+				BC1FFBE31D955E2A0045D564 /* new.gif in Resources */,
 				BCAB7F581D917BCA00D4D615 /* BebasNeue.otf in Resources */,
+				BC1FFBE41D955E2A0045D564 /* shipu.gif in Resources */,
 				BCAB7F571D917BCA00D4D615 /* AgencyFB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,17 +572,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCAB7F4C1D91676D00D4D615 /* ShoppingViewController.m in Sources */,
+				BC1FFBE91D9562480045D564 /* NetDataDownLoad.m in Sources */,
 				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
 				BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
 				BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */,
 				BCAB7F491D91676200D4D615 /* BakeWayViewController.m in Sources */,
 				BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */,
+				BC1FFBF51D9578FE0045D564 /* BakeWayTableViewCell.m in Sources */,
+				BC1FFBDE1D95487C0045D564 /* BakeView.m in Sources */,
 				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
 				BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */,
 				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
+				BC1FFBF21D9578620045D564 /* BakeWayHeaderView.m in Sources */,
 				BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */,
 				BCAB7F421D91617200D4D615 /* UIView+MyPositionSize.m in Sources */,
+				BC1FFBEC1D956E8D0045D564 /* BakeWayModel.m in Sources */,
 				BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */,
 				BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */,
 				BC4B39FC1D901A8700A678E7 /* main.m in Sources */,

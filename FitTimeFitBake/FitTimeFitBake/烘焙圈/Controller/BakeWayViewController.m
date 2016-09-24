@@ -7,8 +7,11 @@
 //
 
 #import "BakeWayViewController.h"
+#import "BakeView.h"
 
 @interface BakeWayViewController ()
+
+@property(nonatomic, strong)BakeView * bakeView;
 
 @end
 
@@ -16,8 +19,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+//    创建导航视图
+    [self initForTitleView];
+//    创建主视图
+    [self initForView];
 }
+#pragma mark
+#pragma mark ========== 导航栏的图标
+-(void)initForTitleView{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"app_images_navigationbar_navigation_email" HightImage:@"app_images_navigationbar_navigation_email" target:self action:@selector(emailAction:)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"app_images_navigationbar_navigation_add" HightImage:@"app_images_navigationbar_navigation_add" target:self action:@selector(addAction:)];
+    
+}
+-(void)emailAction:(UIButton *)button{
+    
+}
+-(void)addAction:(UIButton *)button{
+    
+}
+
+#pragma mark
+#pragma mark ========= 主界面
+-(void)initForView{
+    _bakeView = [[BakeView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, self.view.height-64-49)];
+    _bakeView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_bakeView];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

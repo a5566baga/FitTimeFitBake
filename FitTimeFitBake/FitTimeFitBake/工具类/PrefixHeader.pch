@@ -19,6 +19,9 @@
 
 #import "UINavigationItem+MyNavItem.h"
 
+//请求数据
+#import "NetDataDownLoad.h"
+
 #ifdef DEBUG
 #define ZZQLog(...) NSLog(__VA_ARGS__)
 #else
