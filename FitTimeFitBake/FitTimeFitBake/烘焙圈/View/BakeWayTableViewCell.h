@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BakeWayModel.h"
 
 @interface BakeWayTableViewCell : UITableViewCell
+
+-(void)setCellStyle:(BakeWayModel *)model;
 
 @end

@@ -43,10 +43,11 @@ static int page = 10;
 #pragma mark
 #pragma mark ========== 请求数据(新数据)
 -(void)initForData{
+    page = 10;
     _url = @"http://api.hongbeibang.com/feed/getNew";
     _params = [NSMutableDictionary dictionary];
     _params[@"pageIndex"] = @(0);
-    _params[@"pageSize"] = @(10);
+    _params[@"pageSize"] = @(page);
     _dataDown = [[NetDataDownLoad alloc] init];
     _dataDown.delegate = self;
     [_dataDown GET:_url params:_params];
@@ -66,14 +67,19 @@ static int page = 10;
     _bakeWayModelArray = [BakeWayModel mj_objectArrayWithKeyValuesArray:_dataDown.dataDic[@"data"][@"content"][@"data"]];
     _allBakeWayModelArray = [NSMutableArray arrayWithArray:_bakeWayModelArray];
     NSLog(@"%ld", _allBakeWayModelArray.count);
-    page += 10;
     [self.myTableView reloadData];
+    page += 10;
     [_myTableView.mj_header endRefreshing];
     [_myTableView.mj_footer endRefreshing];
 }
 -(void)downloadDataFailed{
 #warning 失败的时候提示信息没有添加
     NSLog(@"Failed");
+    UIImageView * error = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    error.image = [UIImage imageNamed:@"noNetWork"];
+    error.center = self.center;
+    [self addSubview:error];
+    
     [_myTableView.mj_header endRefreshing];
     [_myTableView.mj_footer endRefreshing];
 }
@@ -123,6 +129,7 @@ static int page = 10;
     _myTableView.showsHorizontalScrollIndicator = NO;
     _myTableView.delegate = self;
     _myTableView.dataSource = self;
+    _myTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addSubview:_myTableView];
 }
 #pragma mark
@@ -135,14 +142,42 @@ static int page = 10;
     if (bakeWayCell == nil) {
         bakeWayCell = [[BakeWayTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CELL_ID];
     }
+    bakeWayCell.selectionStyle = UITableViewCellSelectionStyleNone;
     for (UIView * view in bakeWayCell.subviews) {
         [view removeFromSuperview];
     }
-    
+    [bakeWayCell setCellStyle:_allBakeWayModelArray[indexPath.row]];
     return bakeWayCell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return [self getRowHeight:indexPath];
+}
+//计算cell的高度
+-(CGFloat)getRowHeight:(NSIndexPath *)indexPath{
+    //    topmargin:10 用户头像高:40 用户介绍:动态变化 底边:10 图片高度
+//    描述高度
+    float leftMargin = self.width-70;
+    float desHeight = [self labelHeight:indexPath];
+    if (desHeight > 34) {
+        desHeight = 34;
+    }
+//    图片高度
+    float showPicWidth = (leftMargin-30-2*3)/3;
+    NSInteger count = _allBakeWayModelArray[indexPath.row].image.count;
+    NSInteger row = 0;
+    if (count <= 3) {
+        row = 1;
+    }else if(count <= 6){
+        row = 2;
+    }else{
+        row = 3;
+    }
+    float showPicAllWidth = row * (showPicWidth+3);
+    if (_allBakeWayModelArray[indexPath.row].image.count == 1) {
+        showPicAllWidth = 2*(showPicWidth+3);
+    }
+//    点赞区域 30
+    return 10+40+10+desHeight+showPicAllWidth+30;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     _headerView = [[BakeWayHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.width/16*9)];
@@ -155,4 +190,13 @@ static int page = 10;
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 20;
 }
+
+#pragma mark
+#pragma mark =========== 计算高度
+-(CGFloat)labelHeight:(NSIndexPath *)indexPath{
+    CGSize mySize = CGSizeMake(self.width-70, CGFLOAT_MAX);
+    CGSize size = [_allBakeWayModelArray[indexPath.row].introduce boundingRectWithSize:mySize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size;
+    return size.height;
+}
+
 @end

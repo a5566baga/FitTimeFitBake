@@ -39,6 +39,7 @@
 		BCAB7F581D917BCA00D4D615 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCAB7F551D917BCA00D4D615 /* BebasNeue.otf */; };
 		BCAB7F591D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = BCAB7F561D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF */; };
 		BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */; };
+		BCC9F1401D98148C009C54F1 /* MyZanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F13F1D98148C009C54F1 /* MyZanButton.m */; };
 		BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */; };
 		BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -101,6 +102,8 @@
 		BCAB7F561D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正兰亭纤黑_GBK.TTF"; sourceTree = "<group>"; };
 		BCAB7F5A1D91864F00D4D615 /* LearnBakeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeModel.h; sourceTree = "<group>"; };
 		BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeModel.m; sourceTree = "<group>"; };
+		BCC9F13E1D98148C009C54F1 /* MyZanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyZanButton.h; sourceTree = "<group>"; };
+		BCC9F13F1D98148C009C54F1 /* MyZanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyZanButton.m; sourceTree = "<group>"; };
 		BCEE7CBA1D92A1AB0048DBBC /* LearnBakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeView.h; sourceTree = "<group>"; };
 		BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeView.m; sourceTree = "<group>"; };
 		BCEE7CBD1D92B17A0048DBBC /* LearnBakeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeTableViewCell.h; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 				BC1FFBF11D9578620045D564 /* BakeWayHeaderView.m */,
 				BC1FFBF31D9578FE0045D564 /* BakeWayTableViewCell.h */,
 				BC1FFBF41D9578FE0045D564 /* BakeWayTableViewCell.m */,
+				BCC9F13E1D98148C009C54F1 /* MyZanButton.h */,
+				BCC9F13F1D98148C009C54F1 /* MyZanButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */,
 				BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */,
 				BC4B39FC1D901A8700A678E7 /* main.m in Sources */,
+				BCC9F1401D98148C009C54F1 /* MyZanButton.m in Sources */,
 				BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */,
 				BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */,
 				BCAB7F401D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m in Sources */,

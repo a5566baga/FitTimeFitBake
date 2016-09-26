@@ -11,10 +11,16 @@
 
 @interface BakeWayHeaderView ()
 
+//轮播图
 @property(nonatomic, strong)UIScrollView * myScrollView;
 @property(nonatomic, strong)UIPageControl * myPageControl;
 @property(nonatomic, strong)NSMutableArray * picArray;
 @property(nonatomic, strong)NSTimer * myTimer;
+//下面的分类
+@property(nonatomic, strong)UIButton * theNewButton;
+@property(nonatomic, strong)UIButton * theHotButton;
+@property(nonatomic, strong)UIButton * theFollowButton;
+@property(nonatomic, strong)UIView * downLineView;
 
 @end
 
@@ -24,9 +30,17 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
+        [self initForData];
     }
     return self;
+}
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    [self initForView];
+    [self initForSegment];
+    [self initForPageControl];
+    [self initForTimer];
 }
 
 #pragma mark
@@ -50,6 +64,12 @@
 #pragma mark
 #pragma mark ========== 创建计时器
 -(void)initForTimer{
+    
+}
+
+#pragma mark
+#pragma mark =========== 创建分类
+-(void)initForSegment{
     
 }
 
