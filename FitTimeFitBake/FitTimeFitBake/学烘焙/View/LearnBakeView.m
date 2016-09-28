@@ -116,8 +116,10 @@
     }else if ([_modelsArray[indexPath.section].title isEqualToString:@"大课堂"]){
         return 50+50*_modelsArray[indexPath.section].item.count;
     }
-    else
+    else if([_modelsArray[indexPath.section].title isEqualToString:@"友情链接"]){
         return 50+(self.width-20)/4;
+    }else
+        return self.width/2.5+50+20;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0.1;

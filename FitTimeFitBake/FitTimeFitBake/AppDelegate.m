@@ -55,7 +55,7 @@
             }];
             [_alertVC addAction:ok];
             [_alertVC addAction:cancel];
-            [viewVC presentViewController:_alertVC animated:YES completion:nil];
+            [self.window.rootViewController presentViewController:_alertVC animated:YES completion:nil];
         }
     }];
     

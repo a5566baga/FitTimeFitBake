@@ -40,6 +40,12 @@
 		BCAB7F591D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF in Resources */ = {isa = PBXBuildFile; fileRef = BCAB7F561D917BCA00D4D615 /* 方正兰亭纤黑_GBK.TTF */; };
 		BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */; };
 		BCC9F1401D98148C009C54F1 /* MyZanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F13F1D98148C009C54F1 /* MyZanButton.m */; };
+		BCC9F1BF1D9952DD009C54F1 /* PicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F1BE1D9952DD009C54F1 /* PicItem.m */; };
+		BCC9F2021D9A31A2009C54F1 /* TuanView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F2011D9A31A2009C54F1 /* TuanView.m */; };
+		BCC9F2781D9A8F44009C54F1 /* TuanShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F2771D9A8F44009C54F1 /* TuanShopModel.m */; };
+		BCC9F27B1D9AA2D2009C54F1 /* TuanShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F27A1D9AA2D2009C54F1 /* TuanShopTableViewCell.m */; };
+		BCC9F2AB1D9B7ABC009C54F1 /* QuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F2AA1D9B7ABC009C54F1 /* QuestionView.m */; };
+		BCC9F2D61D9BDC36009C54F1 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F2D51D9BDC36009C54F1 /* QuestionModel.m */; };
 		BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */; };
 		BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -104,6 +110,18 @@
 		BCAB7F5B1D91864F00D4D615 /* LearnBakeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeModel.m; sourceTree = "<group>"; };
 		BCC9F13E1D98148C009C54F1 /* MyZanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyZanButton.h; sourceTree = "<group>"; };
 		BCC9F13F1D98148C009C54F1 /* MyZanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyZanButton.m; sourceTree = "<group>"; };
+		BCC9F1BD1D9952DD009C54F1 /* PicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicItem.h; sourceTree = "<group>"; };
+		BCC9F1BE1D9952DD009C54F1 /* PicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicItem.m; sourceTree = "<group>"; };
+		BCC9F2001D9A31A2009C54F1 /* TuanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanView.h; sourceTree = "<group>"; };
+		BCC9F2011D9A31A2009C54F1 /* TuanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanView.m; sourceTree = "<group>"; };
+		BCC9F2761D9A8F44009C54F1 /* TuanShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanShopModel.h; sourceTree = "<group>"; };
+		BCC9F2771D9A8F44009C54F1 /* TuanShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanShopModel.m; sourceTree = "<group>"; };
+		BCC9F2791D9AA2D2009C54F1 /* TuanShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanShopTableViewCell.h; sourceTree = "<group>"; };
+		BCC9F27A1D9AA2D2009C54F1 /* TuanShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanShopTableViewCell.m; sourceTree = "<group>"; };
+		BCC9F2A91D9B7ABC009C54F1 /* QuestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionView.h; sourceTree = "<group>"; };
+		BCC9F2AA1D9B7ABC009C54F1 /* QuestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionView.m; sourceTree = "<group>"; };
+		BCC9F2D41D9BDC36009C54F1 /* QuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionModel.h; sourceTree = "<group>"; };
+		BCC9F2D51D9BDC36009C54F1 /* QuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionModel.m; sourceTree = "<group>"; };
 		BCEE7CBA1D92A1AB0048DBBC /* LearnBakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeView.h; sourceTree = "<group>"; };
 		BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeView.m; sourceTree = "<group>"; };
 		BCEE7CBD1D92B17A0048DBBC /* LearnBakeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeTableViewCell.h; sourceTree = "<group>"; };
@@ -276,6 +294,8 @@
 			children = (
 				BC1FFBEA1D956E8C0045D564 /* BakeWayModel.h */,
 				BC1FFBEB1D956E8D0045D564 /* BakeWayModel.m */,
+				BCC9F1BD1D9952DD009C54F1 /* PicItem.h */,
+				BCC9F1BE1D9952DD009C54F1 /* PicItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +337,8 @@
 		BC4B3A1C1D901D1900A678E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCC9F2761D9A8F44009C54F1 /* TuanShopModel.h */,
+				BCC9F2771D9A8F44009C54F1 /* TuanShopModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -324,6 +346,10 @@
 		BC4B3A1D1D901D1900A678E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCC9F2001D9A31A2009C54F1 /* TuanView.h */,
+				BCC9F2011D9A31A2009C54F1 /* TuanView.m */,
+				BCC9F2791D9AA2D2009C54F1 /* TuanShopTableViewCell.h */,
+				BCC9F27A1D9AA2D2009C54F1 /* TuanShopTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +376,8 @@
 		BC4B3A201D901D1900A678E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCC9F2D41D9BDC36009C54F1 /* QuestionModel.h */,
+				BCC9F2D51D9BDC36009C54F1 /* QuestionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -357,6 +385,8 @@
 		BC4B3A211D901D1900A678E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCC9F2A91D9B7ABC009C54F1 /* QuestionView.h */,
+				BCC9F2AA1D9B7ABC009C54F1 /* QuestionView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -578,12 +608,15 @@
 			files = (
 				BCAB7F4C1D91676D00D4D615 /* ShoppingViewController.m in Sources */,
 				BC1FFBE91D9562480045D564 /* NetDataDownLoad.m in Sources */,
+				BCC9F2D61D9BDC36009C54F1 /* QuestionModel.m in Sources */,
 				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
 				BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
 				BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */,
 				BCAB7F491D91676200D4D615 /* BakeWayViewController.m in Sources */,
+				BCC9F1BF1D9952DD009C54F1 /* PicItem.m in Sources */,
 				BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */,
+				BCC9F2781D9A8F44009C54F1 /* TuanShopModel.m in Sources */,
 				BC1FFBF51D9578FE0045D564 /* BakeWayTableViewCell.m in Sources */,
 				BC1FFBDE1D95487C0045D564 /* BakeView.m in Sources */,
 				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
@@ -594,12 +627,15 @@
 				BCAB7F421D91617200D4D615 /* UIView+MyPositionSize.m in Sources */,
 				BC1FFBEC1D956E8D0045D564 /* BakeWayModel.m in Sources */,
 				BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */,
+				BCC9F2AB1D9B7ABC009C54F1 /* QuestionView.m in Sources */,
 				BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */,
 				BC4B39FC1D901A8700A678E7 /* main.m in Sources */,
 				BCC9F1401D98148C009C54F1 /* MyZanButton.m in Sources */,
+				BCC9F27B1D9AA2D2009C54F1 /* TuanShopTableViewCell.m in Sources */,
 				BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */,
 				BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */,
 				BCAB7F401D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m in Sources */,
+				BCC9F2021D9A31A2009C54F1 /* TuanView.m in Sources */,
 				BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

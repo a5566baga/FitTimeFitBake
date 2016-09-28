@@ -39,6 +39,8 @@
 //评论区
 @property(nonatomic, strong)UIImageView * commentBgView;
 @property(nonatomic, strong)UILabel * commentDetailLabel;
+//底边颜色
+@property(nonatomic, strong)UILabel * downLineLabel;
 
 @end
 
@@ -63,6 +65,7 @@
     [self initForDetailPicView];
     [self initForZanView];
     [self initForCommentView];
+    [self initForDownLine];
 }
 
 -(void)setCellStyle:(BakeWayModel *)model{
@@ -152,14 +155,14 @@
     float zanWidth = 20;
     float zanBtnWidth = 40;
     _zanBgView = [[UIView alloc] init];
-    _zanBgView.frame = CGRectMake(leftMargin+40+margin, CGRectGetMaxY(_showPicView.frame)+5, mainWidth, zanHeight);
+    _zanBgView.frame = CGRectMake(leftMargin+40+margin, CGRectGetMaxY(_showPicView.frame)+10, mainWidth, zanHeight);
     _zanBgView.backgroundColor = [UIColor clearColor];
     [self addSubview:_zanBgView];
     
 #warning 处理时间
     _timeLabel = [[UILabel alloc] init];
     _timeLabel.frame = CGRectMake(0, 0, zanWidth*3, zanHeight);
-    _timeLabel.backgroundColor = [UIColor blueColor];
+//    _timeLabel.backgroundColor = [UIColor blueColor];
     [self.zanBgView addSubview:_timeLabel];
     
 #pragma mark
@@ -191,11 +194,56 @@
 #pragma mark =============== 评论区
 -(void)initForCommentView{
     _commentBgView = [[UIImageView alloc] init];
-    _commentBgView.frame = CGRectMake(leftMargin+40+margin, CGRectGetMaxY(_zanBgView.frame)+5, mainWidth, 100);
+    _commentBgView.frame = CGRectMake(leftMargin+40+margin, CGRectGetMaxY(_zanBgView.frame), mainWidth-10, 0);
     _commentBgView.userInteractionEnabled = YES;
+    _commentBgView.image = [[UIImage imageNamed:@"comment_blob"] stretchableImageWithLeftCapWidth:50 topCapHeight:40];
     [self addSubview:_commentBgView];
     
+    Comment_bakeWay * commnt = _bakeWayModel.comment;
+    NSArray<Data_bakeWay *> * dataArray = commnt.data;
+    
     float allHeight = 0;
+    float commentLeftMargin = 10;
+    float commentTopMargin = 15;
+    NSString * str = @"回复";
+    float commentLineHeight = 0;
+    for (NSInteger i = dataArray.count-1; i >= 0; i--) {
+//        回复内容
+        NSString * commentText = dataArray[i].text;
+//        第一个用户
+        NSString * commentClientName = dataArray[i].commentClientName;
+//        第二个用户
+        NSString * clientName = dataArray[i].clientName;
+        NSInteger commentClientNameNum = commentClientName.length;
+        NSInteger clientNameNum = clientName.length;
+        NSString * textStr = [NSString stringWithFormat:@"%@ %@ %@:%@", clientName, str, commentClientName, commentText];
+        commentLineHeight = [self commentHeight:textStr]+10;
+        
+        _commentDetailLabel = [[UILabel alloc] init];
+        _commentDetailLabel.numberOfLines = 0;
+        _commentDetailLabel.frame = CGRectMake(commentLeftMargin, commentTopMargin+allHeight, mainWidth-2*leftMargin, commentLineHeight);
+        _commentDetailLabel.textAlignment = NSTextAlignmentLeft;
+        
+        NSMutableAttributedString * attriStr = [[NSMutableAttributedString alloc] initWithString:textStr];
+        [attriStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0,clientNameNum)];
+        [attriStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(clientNameNum+4, commentClientNameNum)];
+        [attriStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:14] range:NSMakeRange(0, textStr.length)];
+        _commentDetailLabel.attributedText = attriStr;
+        [self.commentBgView addSubview:_commentDetailLabel];
+        allHeight += commentLineHeight;
+    }
+    if (allHeight != 0) {
+        _commentBgView.height = allHeight+2*commentTopMargin;
+    }
+}
+
+#pragma mark
+#pragma mark ============== 底边灰色边框
+-(void)initForDownLine{
+    _downLineLabel = [[UILabel alloc] init];
+    _downLineLabel.frame = CGRectMake(0, self.height-7, self.width, 7);
+    _downLineLabel.backgroundColor = [UIColor colorWithRed:0.93 green:0.93 blue:0.93 alpha:1.00];
+    [self addSubview:_downLineLabel];
 }
 
 #pragma mark
@@ -210,6 +258,12 @@
 -(CGFloat)labelHeight{
     CGSize mySize = CGSizeMake(mainWidth, CGFLOAT_MAX);
     CGSize size = [_bakeWayModel.introduce boundingRectWithSize:mySize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size;
+    return size.height;
+}
+
+-(CGFloat)commentHeight:(NSString *)text{
+    CGSize mySize = CGSizeMake(mainWidth-30, CGFLOAT_MAX);
+    CGSize size = [text boundingRectWithSize:mySize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size;
     return size.height;
 }
 

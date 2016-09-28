@@ -12,12 +12,17 @@
 #import "BakeWayModel.h"
 #import "BakeWayHeaderView.h"
 #import "BakeWayTableViewCell.h"
+#import "PicItem.h"
 
 #define CELL_ID @"bakeWayCell"
 static int page = 10;
 @interface BakeView ()<UITableViewDelegate, UITableViewDataSource, NetDataDownLoadDelegate>
 
 @property(nonatomic, strong)BakeWayHeaderView * headerView;
+@property(nonatomic, strong)NSMutableArray<PicItem *> * itemsArray;
+@property(nonatomic, strong)NSMutableArray * picArray;
+@property(nonatomic, strong)NetDataDownLoad * downLoad;
+
 @property(nonatomic, strong)NetDataDownLoad * dataDown;
 @property(nonatomic, strong)UITableView * myTableView;
 @property(nonatomic, strong)NSString * url;
@@ -35,9 +40,17 @@ static int page = 10;
     if (self) {
         [self initForTableView];
         [self initForData];
+        [self initForHeaderViewData];
         [self initForRefrush];
     }
     return self;
+}
+
+-(void)initForHeaderViewData{
+    NSString * url = @"http://api.hongbeibang.com/feed/getCategory";
+    _downLoad = [[NetDataDownLoad alloc] init];
+    _downLoad.delegate = self;
+    [_downLoad GET:url params:nil];
 }
 
 #pragma mark
@@ -66,11 +79,22 @@ static int page = 10;
 -(void)downloadDataFinshed{
     _bakeWayModelArray = [BakeWayModel mj_objectArrayWithKeyValuesArray:_dataDown.dataDic[@"data"][@"content"][@"data"]];
     _allBakeWayModelArray = [NSMutableArray arrayWithArray:_bakeWayModelArray];
-    NSLog(@"%ld", _allBakeWayModelArray.count);
+//    NSLog(@"%ld", _allBakeWayModelArray.count);
     [self.myTableView reloadData];
     page += 10;
     [_myTableView.mj_header endRefreshing];
     [_myTableView.mj_footer endRefreshing];
+    
+    NSDictionary * dataDic = _downLoad.dataDic[@"data"];
+    NSArray * categoryArr = dataDic[@"category"];
+    _itemsArray = [PicItem mj_objectArrayWithKeyValuesArray:categoryArr.firstObject[@"item"]];
+    NSMutableArray * tempPic = [NSMutableArray array];
+    for (NSInteger i = 0; i < _itemsArray.count; i++) {
+        [tempPic addObject:[_itemsArray[i] image]];
+    }
+    _picArray = [NSMutableArray arrayWithArray:tempPic];
+    [_picArray addObject:tempPic.firstObject];
+    [_picArray insertObject:tempPic.lastObject atIndex:0];
 }
 -(void)downloadDataFailed{
 #warning 失败的时候提示信息没有添加
@@ -177,15 +201,39 @@ static int page = 10;
         showPicAllWidth = 2*(showPicWidth+3);
     }
 //    点赞区域 30
-    return 10+40+10+desHeight+showPicAllWidth+30;
+//    评论区
+    Comment_bakeWay * commnt = _allBakeWayModelArray[indexPath.row].comment;
+    NSArray<Data_bakeWay *> * dataArray = commnt.data;
+    float allHeight = 0;
+    NSString * str = @"回复";
+    float commentLineHeight = 0;
+    float commentTopMargin = 15;
+    for (NSInteger i = 0; i < dataArray.count; i++) {
+        //        回复内容
+        NSString * commentText = dataArray[i].text;
+        //        第一个用户
+        NSString * commentClientName = dataArray[i].commentClientName;
+        //        第二个用户
+        NSString * clientName = dataArray[i].clientName;
+        NSString * textStr = [NSString stringWithFormat:@"%@ %@ %@:%@", commentClientName, str, clientName, commentText];
+        commentLineHeight = [self commentHeight:textStr]+10;
+        
+        allHeight += commentLineHeight;
+    }
+    if (allHeight != 0) {
+        allHeight = allHeight+2*commentTopMargin;
+    }
+//    底边灰边
+    return 10+40+10+desHeight+showPicAllWidth+30+allHeight+10;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    _headerView = [[BakeWayHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.width/16*9)];
+    _headerView = [[BakeWayHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.width, self.width/8*3+40)];
     _headerView.backgroundColor = [UIColor orangeColor];
+    [_headerView setPicArray:_picArray];
     return _headerView;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return self.width/16*9;
+    return self.width/8*3+30;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     return 20;
@@ -198,5 +246,10 @@ static int page = 10;
     CGSize size = [_allBakeWayModelArray[indexPath.row].introduce boundingRectWithSize:mySize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size;
     return size.height;
 }
-
+//计算评论高度
+-(CGFloat)commentHeight:(NSString *)text{
+    CGSize mySize = CGSizeMake(self.width-70-30, CGFLOAT_MAX);
+    CGSize size = [text boundingRectWithSize:mySize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size;
+    return size.height;
+}
 @end

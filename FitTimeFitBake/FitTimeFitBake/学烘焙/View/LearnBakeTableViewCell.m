@@ -69,6 +69,8 @@
 @property(nonatomic, strong)MyBigClassButton * bigClassButton;
 //友情链接
 @property(nonatomic, strong)UIButton * linkButton;
+//牛气部落
+@property(nonatomic, strong)UIImageView * niuPicView;
 
 @end
 
@@ -303,6 +305,8 @@
     _menuPic = [[UIImageView alloc] init];
     _menuPic.userInteractionEnabled = YES;
     _menuPic.frame = CGRectMake(margin, 2*topMargin+margin, self.width-2*margin, self.width/2.5);
+    _menuPic.layer.cornerRadius = 10;
+    _menuPic.clipsToBounds = YES;
     [_menuPic sd_setImageWithURL:[NSURL URLWithString:[_model.item.firstObject image]]];
     [self addSubview:_menuPic];
 }
@@ -430,7 +434,17 @@
         [self addSubview:_linkButton];
     }
 }
-
+#pragma mark
+#pragma mark =========== 神器部落
+-(void)initForNiuView{
+    _niuPicView = [[UIImageView alloc] init];
+    _niuPicView.userInteractionEnabled = YES;
+    _niuPicView.frame = CGRectMake(margin, 2*topMargin+margin, self.width-2*margin, self.width/2.5);
+    _niuPicView.layer.cornerRadius = 10;
+    _niuPicView.clipsToBounds = YES;
+    [_niuPicView sd_setImageWithURL:[NSURL URLWithString:[_model.item.firstObject image]]];
+    [self addSubview:_niuPicView];
+}
 #pragma mark
 #pragma mark ========= 通过不同的类型创建不同的cell样式
 //判断用哪种cell样式
@@ -468,6 +482,9 @@
     }else if ([_model.title isEqualToString:@"友情链接"]){
         [self initForTitleView];
         [self initForLinkView];
+    }else{
+        [self initForTitleView];
+        [self initForNiuView];
     }
 }
 -(void)setCellStyle:(LearnBakeModel *)model{

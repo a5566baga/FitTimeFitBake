@@ -10,4 +10,6 @@
 
 @interface BakeWayHeaderView : UIView
 
+-(void)setPicArray:(NSArray *)picArrays;
+
 @end
