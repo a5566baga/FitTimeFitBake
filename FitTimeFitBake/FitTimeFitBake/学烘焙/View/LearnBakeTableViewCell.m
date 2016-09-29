@@ -161,45 +161,34 @@
     _timer  = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(runPic) userInfo:nil repeats:YES];
 }
 -(void)runPic{
-    float  _X = self.scrollView.contentOffset.x;
-    if (_X <= self.scrollView.contentSize.width-2*self.width) {
-        _X += self.width;
-    }
-    NSInteger index = _X/self.width;
-    if (index == 0) {
-        [self.scrollView setContentOffset:CGPointMake(self.width*(_picArray.count-2),0) animated:YES];
-        _pageControl.currentPage = _picArray.count-2;
-        _titlesLabel.text = _titleArray[_picArray.count-2];
-    }else if (index == _picArray.count-2){
-        [self.scrollView setContentOffset:CGPointMake(0,0) animated:YES];
-        _pageControl.currentPage = _picArray.count-2;
-        _titlesLabel.text = _titleArray[0];
-    }else{
-        [self.scrollView setContentOffset:CGPointMake((index)*self.width, 0) animated:YES];
-        _pageControl.currentPage = index-1;
-        _titlesLabel.text = _titleArray[index];
-    }
+    float  _X = self.scrollView.contentOffset.x+self.width;
+    
+    [self.scrollView setContentOffset:CGPointMake(_X, 0) animated:YES];
 }
 #pragma mark
 #pragma mark ============ scrollView的代理(轮播处理)
 -(void)movePicture{
-    NSInteger index = _scrollView.contentOffset.x/self.width;
     if (_scrollView.contentOffset.x/self.width == 0) {
-        _scrollView.contentOffset = CGPointMake(self.width*(_picArray.count-2), 0) ;
-        _pageControl.currentPage = _picArray.count-2;
-        _titlesLabel.text = _titleArray[_picArray.count-2];
-    }else if (_scrollView.contentOffset.x/self.width == _picArray.count-2){
-        _scrollView.contentOffset = CGPointMake(0, 0);
-        _pageControl.currentPage = _picArray.count-2;
-        _titlesLabel.text = _titleArray[0];
-    }else{
-        _scrollView.contentOffset = CGPointMake(self.width*(index), 0);
-        _pageControl.currentPage = index-1;
-        _titlesLabel.text = _titleArray[index];
+        _scrollView.contentOffset = CGPointMake(self.width*(_titleArray.count-2), 0) ;
+    }else if (_scrollView.contentOffset.x/self.width == _titleArray.count+1-2){
+        _scrollView.contentOffset = CGPointMake(self.width, 0);
     }
+    NSInteger index = _scrollView.contentOffset.x/self.width-1;
+    _pageControl.currentPage = index;
+    _titlesLabel.text = _titleArray[index];
 }
 
+//开始减速，这里调用移动的方法
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
+    [self movePicture];
+}
+//减速结束
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [self movePicture];
+    
+}
+//动画结束，
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
     [self movePicture];
 }
 

@@ -79,7 +79,6 @@ static int page = 10;
 -(void)downloadDataFinshed{
     _bakeWayModelArray = [BakeWayModel mj_objectArrayWithKeyValuesArray:_dataDown.dataDic[@"data"][@"content"][@"data"]];
     _allBakeWayModelArray = [NSMutableArray arrayWithArray:_bakeWayModelArray];
-//    NSLog(@"%ld", _allBakeWayModelArray.count);
     [self.myTableView reloadData];
     page += 10;
     [_myTableView.mj_header endRefreshing];

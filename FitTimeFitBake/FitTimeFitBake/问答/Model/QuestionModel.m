@@ -10,10 +10,9 @@
 
 @implementation QuestionModel
 
--(void)setValue:(id)value forUndefinedKey:(NSString *)key{
-    if ([key isEqualToString:@"description"]) {
-        _descriptions = value;
-    }
++ (NSDictionary *)mj_replacedKeyFromPropertyName
+{
+    return @{@"descriptions" : @"description"};
 }
 
 @end

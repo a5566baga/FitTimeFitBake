@@ -1,5 +1,5 @@
 //
-//  QuestionView.h
+//  QuestionTableViewCell.h
 //  FitTimeFitBake
 //
 //  Created by 张增强 on 16/9/28.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionModel.h"
 
-@interface QuestionView : UIView
+@interface QuestionTableViewCell : UITableViewCell
 
-@property(nonatomic, strong)NSString * typeStr;
--(void)setSelectTypeStr:(NSString *)type;
+-(void)setCellModel:(QuestionModel *)model;
+
 @end

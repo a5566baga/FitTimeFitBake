@@ -91,23 +91,9 @@
     _myTimer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(changPic) userInfo:nil repeats:YES];
 }
 -(void)changPic{
-    NSInteger index = _myScrollView.contentOffset.x/self.width;
-    if (index < _picArray.count-1) {
-        index += 1;
-    }
-    if (index == 0) {
-        _myPageControl.currentPage = _picArray.count-2;
-        [_myScrollView setContentOffset:CGPointMake(self.width*(_picArray.count-2), 0) animated:YES];
-    }else if (index == _picArray.count-1){
-        _myPageControl.currentPage = 0;
-        [_myScrollView setContentOffset:CGPointMake(self.width, 0) animated:YES];
-    }else{
-        [UIView animateWithDuration:0.5 animations:^{
-            _myPageControl.currentPage = index-1;
-            [_myScrollView setContentOffset:CGPointMake(self.width*index, 0) animated:YES];
-//            _myScrollView.contentOffset = CGPointMake(self.width*index, 0);
-        }];
-    }
+    float  _X = self.myScrollView.contentOffset.x+self.width;
+    
+    [self.myScrollView setContentOffset:CGPointMake(_X, 0) animated:YES];
 }
 
 #pragma mark
@@ -188,17 +174,28 @@
 
 #pragma mark
 #pragma mark ========= 代理方法
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    NSInteger index = scrollView.contentOffset.x/self.width;
-    if (index == 0) {
-        _myPageControl.currentPage = _picArray.count-2;
-        _myScrollView.contentOffset  = CGPointMake(self.width*(_picArray.count-2), 0);
-    }else if (index == _picArray.count-1){
-        _myPageControl.currentPage = 0;
+-(void)movePicture{
+    if (_myScrollView.contentOffset.x/self.width == 0) {
+        _myScrollView.contentOffset = CGPointMake(self.width*(_picArray.count-2), 0) ;
+    }else if (_myScrollView.contentOffset.x/self.width == _picArray.count+1-2){
         _myScrollView.contentOffset = CGPointMake(self.width, 0);
-    }else{
-        _myPageControl.currentPage = index-1;
-        _myScrollView.contentOffset = CGPointMake(self.width*index, 0);
     }
+    NSInteger index = _myScrollView.contentOffset.x/self.width-1;
+    _myPageControl.currentPage = index;
 }
+
+//开始减速，这里调用移动的方法
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
+    [self movePicture];
+}
+//减速结束
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [self movePicture];
+    
+}
+//动画结束，
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+    [self movePicture];
+}
+
 @end

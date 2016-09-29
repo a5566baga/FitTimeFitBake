@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		91268B2CFC7947B41EFEC7DA /* libPods-FitTimeFitBake.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B8C5E1D671A69111FF3A3C /* libPods-FitTimeFitBake.a */; };
+		BC15F16C1D9BF2AF003EE97A /* QuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F16B1D9BF2AF003EE97A /* QuestionTableViewCell.m */; };
+		BC15F16F1D9C09E4003EE97A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F16E1D9C09E4003EE97A /* LoginViewController.m */; };
+		BC15F1721D9C09EF003EE97A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F1711D9C09EF003EE97A /* RegisterViewController.m */; };
+		BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F1741D9C1FD6003EE97A /* MyOtherWayLoginButton.m */; };
 		BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */; };
 		BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA71D93D2710045D564 /* MyHotButton.m */; };
 		BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */; };
@@ -53,6 +57,14 @@
 /* Begin PBXFileReference section */
 		60B8C5E1D671A69111FF3A3C /* libPods-FitTimeFitBake.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FitTimeFitBake.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		915AFBA58995A8FA4CB304B0 /* Pods-FitTimeFitBake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTimeFitBake.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake.release.xcconfig"; sourceTree = "<group>"; };
+		BC15F16A1D9BF2AF003EE97A /* QuestionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionTableViewCell.h; sourceTree = "<group>"; };
+		BC15F16B1D9BF2AF003EE97A /* QuestionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTableViewCell.m; sourceTree = "<group>"; };
+		BC15F16D1D9C09E4003EE97A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BC15F16E1D9C09E4003EE97A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BC15F1701D9C09EF003EE97A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		BC15F1711D9C09EF003EE97A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		BC15F1731D9C1FD6003EE97A /* MyOtherWayLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOtherWayLoginButton.h; sourceTree = "<group>"; };
+		BC15F1741D9C1FD6003EE97A /* MyOtherWayLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOtherWayLoginButton.m; sourceTree = "<group>"; };
 		BC1FFBA31D93C2F00045D564 /* MyFoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFoundButton.h; sourceTree = "<group>"; };
 		BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFoundButton.m; sourceTree = "<group>"; };
 		BC1FFBA61D93D2710045D564 /* MyHotButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHotButton.h; sourceTree = "<group>"; };
@@ -241,6 +253,10 @@
 			children = (
 				BCAB7F501D91678200D4D615 /* MeViewController.h */,
 				BCAB7F511D91678200D4D615 /* MeViewController.m */,
+				BC15F16D1D9C09E4003EE97A /* LoginViewController.h */,
+				BC15F16E1D9C09E4003EE97A /* LoginViewController.m */,
+				BC15F1701D9C09EF003EE97A /* RegisterViewController.h */,
+				BC15F1711D9C09EF003EE97A /* RegisterViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +271,8 @@
 		BC4B3A141D901D1900A678E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BC15F1731D9C1FD6003EE97A /* MyOtherWayLoginButton.h */,
+				BC15F1741D9C1FD6003EE97A /* MyOtherWayLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -387,6 +405,8 @@
 			children = (
 				BCC9F2A91D9B7ABC009C54F1 /* QuestionView.h */,
 				BCC9F2AA1D9B7ABC009C54F1 /* QuestionView.m */,
+				BC15F16A1D9BF2AF003EE97A /* QuestionTableViewCell.h */,
+				BC15F16B1D9BF2AF003EE97A /* QuestionTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -607,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCAB7F4C1D91676D00D4D615 /* ShoppingViewController.m in Sources */,
+				BC15F1721D9C09EF003EE97A /* RegisterViewController.m in Sources */,
 				BC1FFBE91D9562480045D564 /* NetDataDownLoad.m in Sources */,
 				BCC9F2D61D9BDC36009C54F1 /* QuestionModel.m in Sources */,
 				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
@@ -619,12 +640,15 @@
 				BCC9F2781D9A8F44009C54F1 /* TuanShopModel.m in Sources */,
 				BC1FFBF51D9578FE0045D564 /* BakeWayTableViewCell.m in Sources */,
 				BC1FFBDE1D95487C0045D564 /* BakeView.m in Sources */,
+				BC15F16C1D9BF2AF003EE97A /* QuestionTableViewCell.m in Sources */,
 				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
 				BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */,
 				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
+				BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */,
 				BC1FFBF21D9578620045D564 /* BakeWayHeaderView.m in Sources */,
 				BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */,
 				BCAB7F421D91617200D4D615 /* UIView+MyPositionSize.m in Sources */,
+				BC15F16F1D9C09E4003EE97A /* LoginViewController.m in Sources */,
 				BC1FFBEC1D956E8D0045D564 /* BakeWayModel.m in Sources */,
 				BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */,
 				BCC9F2AB1D9B7ABC009C54F1 /* QuestionView.m in Sources */,

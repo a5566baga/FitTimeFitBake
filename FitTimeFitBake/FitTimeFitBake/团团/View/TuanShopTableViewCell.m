@@ -106,7 +106,7 @@
     
     _bottomLineView = [[UIView alloc] init];
     _bottomLineView.frame = CGRectMake(0, self.height-MARGIN, self.width, MARGIN);
-    _bottomLineView.backgroundColor = [UIColor colorWithRed:0.82 green:0.82 blue:0.82 alpha:1.00];
+    _bottomLineView.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.96 alpha:1.00];
     [self addSubview:_bottomLineView];
 }
 

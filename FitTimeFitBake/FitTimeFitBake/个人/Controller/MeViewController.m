@@ -7,6 +7,7 @@
 //
 
 #import "MeViewController.h"
+#import "LoginViewController.h"
 
 @interface MeViewController ()
 
@@ -16,7 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    LoginViewController * loginVC = [[LoginViewController alloc] init];
+    [self.navigationController pushViewController:loginVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

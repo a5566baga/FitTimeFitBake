@@ -1,5 +1,5 @@
 //
-//  QuestionView.h
+//  RegisterViewController.h
 //  FitTimeFitBake
 //
 //  Created by 张增强 on 16/9/28.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuestionView : UIView
+@interface RegisterViewController : UIViewController
 
-@property(nonatomic, strong)NSString * typeStr;
--(void)setSelectTypeStr:(NSString *)type;
 @end

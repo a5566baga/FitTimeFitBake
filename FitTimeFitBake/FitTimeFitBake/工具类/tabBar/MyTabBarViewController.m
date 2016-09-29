@@ -42,7 +42,6 @@
     
     [self setStyleWithImage:@"me" selectImage:@"me_sel" viewController:[[MeViewController alloc] init] title:@"小窝"];
     
-    
 }
 
 -(void)setStyleWithImage:(NSString *)imageStr selectImage:(NSString *)selectImageStr viewController:(UIViewController *)viewController title:(NSString *)title{
