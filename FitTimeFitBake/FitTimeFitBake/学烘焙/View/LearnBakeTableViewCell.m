@@ -31,6 +31,7 @@
 @property(nonatomic, strong)NSMutableArray * picArray;
 @property(nonatomic, strong)NSMutableArray * titleArray;
 @property(nonatomic, strong)NSTimer * timer;
+@property(nonatomic, strong)UITapGestureRecognizer * tap;
 //分类食谱
 @property(nonatomic, strong)UIImageView * leftView;
 @property(nonatomic, strong)UILabel * classifyTitleLabel;
@@ -43,6 +44,7 @@
 @property(nonatomic, strong)UIImageView * successPinPic;
 @property(nonatomic, strong)UILabel * numOfPerpleLabel;
 @property(nonatomic, strong)UIButton * goTuanButton;
+@property(nonatomic, strong)UITapGestureRecognizer * tuanTap;
 
 @property(nonatomic, strong)NSTimer * jishiTimer;
 @property(nonatomic, strong)UILabel * hourLabel;
@@ -80,7 +82,7 @@
     [super awakeFromNib];
     // Initialization code
 }
-
+//每个Cell的title内容的封装
 -(void)initForTitleView{
     _leftView = [[UIImageView alloc] init];
     _leftView.frame = CGRectMake(margin, topMargin, 3, titleMargin);
@@ -98,7 +100,7 @@
 #pragma mark ========= 轮播图
 -(void)initForScrollView{
     //    解析数据
-    NSArray * array = _model.item;
+    NSArray<Item_Bake *> * array = _model.item;
     _picArray = [[NSMutableArray alloc] init];
     _titleArray = [[NSMutableArray alloc] init];
     for (Item_Bake * item in array) {
@@ -154,6 +156,19 @@
     [self.bgView addSubview:_titlesLabel];
     
     [self initForTimer];
+    
+//    创建点击手势
+    _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPic:)];
+    _tap.numberOfTapsRequired = 1;
+    [_scrollView addGestureRecognizer:_tap];
+}
+//tap事件
+-(void)tapPic:(UITapGestureRecognizer *)tap{
+    UIScrollView * nowScrollView = (UIScrollView *)tap.view;
+    NSInteger index = nowScrollView.contentOffset.x/self.width;
+    ScrollViewDetailViewController * scorllViewVC = [[ScrollViewDetailViewController alloc] init];
+    NSArray * parmasArray = [self getParams:index];
+    self.goToPicDetail(scorllViewVC, parmasArray[0], parmasArray[1]);
 }
 #pragma mark
 #pragma mark ========== 定时器
@@ -208,8 +223,9 @@
         _classifyButton.layer.borderColor = [UIColor colorWithRed:0.82 green:0.82 blue:0.82 alpha:1.00].CGColor;
         _classifyButton.layer.borderWidth = 1;
         _classifyButton.layer.cornerRadius = 5;
+        _classifyButton.tag = 200+i;
+        [_classifyButton addTarget:self action:@selector(classifyButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_classifyButton];
-#warning 分类食谱没有添加Button事件
     }
     _checkAllButton = [[UIButton alloc] init];
     _checkAllButton.frame = CGRectMake(margin, CGRectGetMaxY(_classifyButton.frame)+margin, self.width-2*margin, 35);
@@ -220,17 +236,29 @@
     _checkAllButton.layer.masksToBounds = YES;
     _checkAllButton.clipsToBounds = YES;
     _checkAllButton.layer.cornerRadius = 5;
+    [_checkAllButton addTarget:self action:@selector(checkAllButton:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_checkAllButton];
 }
-
+#warning 分类食谱的事件处理
+-(void)classifyButtonAction:(UIButton *)button{
+    NSInteger index = button.tag - 200;
+    NSArray * params = [self getParams:index];
+    SelectTypeViewController * selectTypeVC = [[SelectTypeViewController alloc] init];
+    self.goToSelectTypeDetail(selectTypeVC, params[0], params[0]);
+}
+-(void)checkAllButton:(UIButton *)button{
+#warning 单独处理
+    AllTypeViewController * allTypeVC = [[AllTypeViewController alloc] init];
+    self.goToFoodTypeDetail(allTypeVC, @"classify", @"get");
+}
 #pragma mark
 #pragma mark ======== 拼团
 -(void)initForPinTuanView{
-#warning Button没有添加事件
     _goTuanButton = [[UIButton alloc] init];
     _goTuanButton.frame = CGRectMake(self.width-25, topMargin, 15, 10);
     [_goTuanButton setBackgroundImage:[UIImage imageNamed:@"right_arror"] forState:UIControlStateNormal];
     [_goTuanButton setBackgroundImage:[UIImage imageNamed:@"right_arror"] forState:UIControlStateHighlighted];
+    [_goMenuButton addTarget:self action:@selector(goTuanAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_goTuanButton];
     //    scrollview
     _pinTuanBgView = [[UIScrollView alloc] init];
@@ -271,7 +299,9 @@
         _numOfPerpleLabel.textAlignment = NSTextAlignmentCenter;
         _numOfPerpleLabel.text = [NSString stringWithFormat:@"%ld人拼团", [tuanArray[i] groupNum]];
         [self.productBgView addSubview:_numOfPerpleLabel];
-        
+        _tuanTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapTuanAction:)];
+        _tuanTap.numberOfTapsRequired = 1;
+        [self.productBgView addGestureRecognizer:_tuanTap];
 #warning 添加定时器，准备倒计时
         
     }
@@ -281,7 +311,16 @@
 -(void)initDateForShop{
     
 }
-
+-(void)goTuanAction:(UIButton *)btn{
+    self.goToTuanVC();
+}
+-(void)tapTuanAction:(UITapGestureRecognizer *)tap{
+    UIScrollView * tuanView = (UIScrollView *)tap.view;
+    NSInteger index = tuanView.contentOffset.x/133;
+    NSArray * params = [self getParams:index];
+    PinShoppingViewController * pinVC = [[PinShoppingViewController alloc] init];
+    self.goToPinShoppingDetail(pinVC, params[0], params[1]);
+}
 #pragma mark
 #pragma mark ========= 精选菜单
 -(void)initForChooseMenu{
@@ -478,6 +517,18 @@
 }
 -(void)setCellStyle:(LearnBakeModel *)model{
     _model = model;
+}
+
+#pragma mark
+#pragma mark =========== 工具类
+-(NSArray *)getParams:(NSInteger)index{
+    NSArray<Item_Bake *> * array = _model.item;
+    NSString * linkStr = array[index-1].link;
+    NSArray * strArray = [linkStr componentsSeparatedByString:@"/"];
+    NSString * typeStr = strArray[strArray.count-2];
+    NSString * idStr = [NSString stringWithFormat:@"%@", strArray.lastObject];
+    NSArray * resultArray = @[typeStr, idStr];
+    return resultArray;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

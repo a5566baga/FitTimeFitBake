@@ -94,6 +94,11 @@
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     [cell setCellStyle:_modelsArray[indexPath.section]];
+    
+    [cell setGoToPicDetail:^(ScrollViewDetailViewController * vc, NSString * type, NSString * idStr) {
+        self.goToPicController(vc, type, idStr);
+    }];
+    
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

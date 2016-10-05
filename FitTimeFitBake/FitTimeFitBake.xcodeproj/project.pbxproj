@@ -12,6 +12,8 @@
 		BC15F16F1D9C09E4003EE97A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F16E1D9C09E4003EE97A /* LoginViewController.m */; };
 		BC15F1721D9C09EF003EE97A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F1711D9C09EF003EE97A /* RegisterViewController.m */; };
 		BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F1741D9C1FD6003EE97A /* MyOtherWayLoginButton.m */; };
+		BC15F2351D9D447E003EE97A /* AllTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F2341D9D447E003EE97A /* AllTypeViewController.m */; };
+		BC15F2381D9D52E5003EE97A /* ScrollViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC15F2371D9D52E5003EE97A /* ScrollViewDetailViewController.m */; };
 		BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */; };
 		BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBA71D93D2710045D564 /* MyHotButton.m */; };
 		BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1FFBAA1D93F97F0045D564 /* MyDayActityButton.m */; };
@@ -29,6 +31,15 @@
 		BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A031D901A8700A678E7 /* Main.storyboard */; };
 		BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A061D901A8700A678E7 /* Assets.xcassets */; };
 		BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */; };
+		BC97B7F71D9E207300E9CA2F /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7F61D9E207300E9CA2F /* FoundViewController.m */; };
+		BC97B7FA1D9E220600E9CA2F /* HotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7F91D9E220600E9CA2F /* HotDetailViewController.m */; };
+		BC97B7FD1D9E226100E9CA2F /* RecipeGuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7FC1D9E226100E9CA2F /* RecipeGuyViewController.m */; };
+		BC97B8001D9E22BC00E9CA2F /* DailyActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7FF1D9E22BC00E9CA2F /* DailyActivityViewController.m */; };
+		BC97B8031D9E241E00E9CA2F /* BigClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8021D9E241E00E9CA2F /* BigClassViewController.m */; };
+		BC97B8061D9E248400E9CA2F /* NiuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */; };
+		BC97B8091D9E267E00E9CA2F /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */; };
+		BCA0C3D01D9E13300049E4DB /* PinShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA0C3CF1D9E13300049E4DB /* PinShoppingViewController.m */; };
+		BCA0C3D31D9E13C00049E4DB /* ChoiceMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA0C3D21D9E13C00049E4DB /* ChoiceMenuViewController.m */; };
 		BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F341D91605000D4D615 /* MyTabBarViewController.m */; };
 		BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F371D9160F000D4D615 /* MyNavigationViewController.m */; };
 		BCAB7F401D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F3B1D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m */; };
@@ -65,6 +76,10 @@
 		BC15F1711D9C09EF003EE97A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		BC15F1731D9C1FD6003EE97A /* MyOtherWayLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOtherWayLoginButton.h; sourceTree = "<group>"; };
 		BC15F1741D9C1FD6003EE97A /* MyOtherWayLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOtherWayLoginButton.m; sourceTree = "<group>"; };
+		BC15F2331D9D447E003EE97A /* AllTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTypeViewController.h; sourceTree = "<group>"; };
+		BC15F2341D9D447E003EE97A /* AllTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTypeViewController.m; sourceTree = "<group>"; };
+		BC15F2361D9D52E5003EE97A /* ScrollViewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewDetailViewController.h; sourceTree = "<group>"; };
+		BC15F2371D9D52E5003EE97A /* ScrollViewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewDetailViewController.m; sourceTree = "<group>"; };
 		BC1FFBA31D93C2F00045D564 /* MyFoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFoundButton.h; sourceTree = "<group>"; };
 		BC1FFBA41D93C2F00045D564 /* MyFoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFoundButton.m; sourceTree = "<group>"; };
 		BC1FFBA61D93D2710045D564 /* MyHotButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHotButton.h; sourceTree = "<group>"; };
@@ -94,6 +109,24 @@
 		BC4B3A061D901A8700A678E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4B3A091D901A8700A678E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4B3A0B1D901A8700A678E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC97B7F51D9E207300E9CA2F /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
+		BC97B7F61D9E207300E9CA2F /* FoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundViewController.m; sourceTree = "<group>"; };
+		BC97B7F81D9E220600E9CA2F /* HotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDetailViewController.h; sourceTree = "<group>"; };
+		BC97B7F91D9E220600E9CA2F /* HotDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotDetailViewController.m; sourceTree = "<group>"; };
+		BC97B7FB1D9E226100E9CA2F /* RecipeGuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeGuyViewController.h; sourceTree = "<group>"; };
+		BC97B7FC1D9E226100E9CA2F /* RecipeGuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeGuyViewController.m; sourceTree = "<group>"; };
+		BC97B7FE1D9E22BC00E9CA2F /* DailyActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyActivityViewController.h; sourceTree = "<group>"; };
+		BC97B7FF1D9E22BC00E9CA2F /* DailyActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyActivityViewController.m; sourceTree = "<group>"; };
+		BC97B8011D9E241E00E9CA2F /* BigClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigClassViewController.h; sourceTree = "<group>"; };
+		BC97B8021D9E241E00E9CA2F /* BigClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigClassViewController.m; sourceTree = "<group>"; };
+		BC97B8041D9E248400E9CA2F /* NiuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NiuDetailViewController.h; sourceTree = "<group>"; };
+		BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiuDetailViewController.m; sourceTree = "<group>"; };
+		BC97B8071D9E267E00E9CA2F /* SelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeViewController.h; sourceTree = "<group>"; };
+		BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
+		BCA0C3CE1D9E13300049E4DB /* PinShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinShoppingViewController.h; sourceTree = "<group>"; };
+		BCA0C3CF1D9E13300049E4DB /* PinShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinShoppingViewController.m; sourceTree = "<group>"; };
+		BCA0C3D11D9E13C00049E4DB /* ChoiceMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceMenuViewController.h; sourceTree = "<group>"; };
+		BCA0C3D21D9E13C00049E4DB /* ChoiceMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceMenuViewController.m; sourceTree = "<group>"; };
 		BCAB7F331D91605000D4D615 /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarViewController.h; sourceTree = "<group>"; };
 		BCAB7F341D91605000D4D615 /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarViewController.m; sourceTree = "<group>"; };
 		BCAB7F361D9160F000D4D615 /* MyNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigationViewController.h; sourceTree = "<group>"; };
@@ -168,6 +201,59 @@
 				915AFBA58995A8FA4CB304B0 /* Pods-FitTimeFitBake.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC15F22F1D9D4458003EE97A /* 二级页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BC15F2301D9D4458003EE97A /* Controller */,
+				BC15F2311D9D4458003EE97A /* Model */,
+				BC15F2321D9D4458003EE97A /* View */,
+			);
+			path = "二级页面";
+			sourceTree = "<group>";
+		};
+		BC15F2301D9D4458003EE97A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC15F2361D9D52E5003EE97A /* ScrollViewDetailViewController.h */,
+				BC15F2371D9D52E5003EE97A /* ScrollViewDetailViewController.m */,
+				BC97B8071D9E267E00E9CA2F /* SelectTypeViewController.h */,
+				BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */,
+				BC15F2331D9D447E003EE97A /* AllTypeViewController.h */,
+				BC15F2341D9D447E003EE97A /* AllTypeViewController.m */,
+				BCA0C3CE1D9E13300049E4DB /* PinShoppingViewController.h */,
+				BCA0C3CF1D9E13300049E4DB /* PinShoppingViewController.m */,
+				BCA0C3D11D9E13C00049E4DB /* ChoiceMenuViewController.h */,
+				BCA0C3D21D9E13C00049E4DB /* ChoiceMenuViewController.m */,
+				BC97B7F51D9E207300E9CA2F /* FoundViewController.h */,
+				BC97B7F61D9E207300E9CA2F /* FoundViewController.m */,
+				BC97B7F81D9E220600E9CA2F /* HotDetailViewController.h */,
+				BC97B7F91D9E220600E9CA2F /* HotDetailViewController.m */,
+				BC97B7FB1D9E226100E9CA2F /* RecipeGuyViewController.h */,
+				BC97B7FC1D9E226100E9CA2F /* RecipeGuyViewController.m */,
+				BC97B7FE1D9E22BC00E9CA2F /* DailyActivityViewController.h */,
+				BC97B7FF1D9E22BC00E9CA2F /* DailyActivityViewController.m */,
+				BC97B8011D9E241E00E9CA2F /* BigClassViewController.h */,
+				BC97B8021D9E241E00E9CA2F /* BigClassViewController.m */,
+				BC97B8041D9E248400E9CA2F /* NiuDetailViewController.h */,
+				BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC15F2311D9D4458003EE97A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC15F2321D9D4458003EE97A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BC1FFBDF1D955E2A0045D564 /* gif */ = {
@@ -417,6 +503,7 @@
 				BC4B3A231D901D1900A678E7 /* Controller */,
 				BC4B3A241D901D1900A678E7 /* Model */,
 				BC4B3A251D901D1900A678E7 /* View */,
+				BC15F22F1D9D4458003EE97A /* 二级页面 */,
 			);
 			path = "学烘焙";
 			sourceTree = "<group>";
@@ -630,18 +717,27 @@
 				BC15F1721D9C09EF003EE97A /* RegisterViewController.m in Sources */,
 				BC1FFBE91D9562480045D564 /* NetDataDownLoad.m in Sources */,
 				BCC9F2D61D9BDC36009C54F1 /* QuestionModel.m in Sources */,
+				BC97B8091D9E267E00E9CA2F /* SelectTypeViewController.m in Sources */,
+				BC15F2381D9D52E5003EE97A /* ScrollViewDetailViewController.m in Sources */,
 				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
+				BCA0C3D31D9E13C00049E4DB /* ChoiceMenuViewController.m in Sources */,
 				BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
+				BC97B8001D9E22BC00E9CA2F /* DailyActivityViewController.m in Sources */,
 				BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */,
 				BCAB7F491D91676200D4D615 /* BakeWayViewController.m in Sources */,
 				BCC9F1BF1D9952DD009C54F1 /* PicItem.m in Sources */,
 				BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */,
 				BCC9F2781D9A8F44009C54F1 /* TuanShopModel.m in Sources */,
+				BC97B7FD1D9E226100E9CA2F /* RecipeGuyViewController.m in Sources */,
 				BC1FFBF51D9578FE0045D564 /* BakeWayTableViewCell.m in Sources */,
+				BCA0C3D01D9E13300049E4DB /* PinShoppingViewController.m in Sources */,
+				BC97B8031D9E241E00E9CA2F /* BigClassViewController.m in Sources */,
+				BC97B8061D9E248400E9CA2F /* NiuDetailViewController.m in Sources */,
 				BC1FFBDE1D95487C0045D564 /* BakeView.m in Sources */,
 				BC15F16C1D9BF2AF003EE97A /* QuestionTableViewCell.m in Sources */,
 				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
+				BC97B7F71D9E207300E9CA2F /* FoundViewController.m in Sources */,
 				BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */,
 				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
 				BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */,
@@ -658,7 +754,9 @@
 				BCC9F27B1D9AA2D2009C54F1 /* TuanShopTableViewCell.m in Sources */,
 				BCAB7F5C1D91864F00D4D615 /* LearnBakeModel.m in Sources */,
 				BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */,
+				BC15F2351D9D447E003EE97A /* AllTypeViewController.m in Sources */,
 				BCAB7F401D91617200D4D615 /* UIBarButtonItem+MyBarButtonItem.m in Sources */,
+				BC97B7FA1D9E220600E9CA2F /* HotDetailViewController.m in Sources */,
 				BCC9F2021D9A31A2009C54F1 /* TuanView.m in Sources */,
 				BC1FFBA81D93D2710045D564 /* MyHotButton.m in Sources */,
 			);
@@ -704,9 +802,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -726,6 +826,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "9555699f-7a56-42d2-80a5-f0d49bdc7092";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -748,9 +849,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -763,6 +866,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "9555699f-7a56-42d2-80a5-f0d49bdc7092";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -773,11 +877,13 @@
 			baseConfigurationReference = D91D8AF74C439ACF74930561 /* Pods-FitTimeFitBake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
 				GCC_PREFIX_HEADER = "FitTimeFitBake/工具类/PrefixHeader.pch";
 				INFOPLIST_FILE = FitTimeFitBake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.FitTimeFitBake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9555699f-7a56-42d2-80a5-f0d49bdc7092";
 			};
 			name = Debug;
 		};
@@ -786,11 +892,13 @@
 			baseConfigurationReference = 915AFBA58995A8FA4CB304B0 /* Pods-FitTimeFitBake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
 				GCC_PREFIX_HEADER = "FitTimeFitBake/工具类/PrefixHeader.pch";
 				INFOPLIST_FILE = FitTimeFitBake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ben.FitTimeFitBake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9555699f-7a56-42d2-80a5-f0d49bdc7092";
 			};
 			name = Release;
 		};

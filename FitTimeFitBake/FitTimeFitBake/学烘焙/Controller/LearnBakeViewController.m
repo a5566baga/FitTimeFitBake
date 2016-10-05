@@ -23,6 +23,13 @@
 //    创建一个view就行，根据数据内的type决定cell的样式
     _learnBakeView = [[LearnBakeView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, self.view.height-64-49)];
     [self.view addSubview:_learnBakeView];
+    
+    __weak typeof(self) weakSelf = self;
+    [_learnBakeView setGoToPicController:^(ScrollViewDetailViewController * vc, NSString * typeStr, NSString * idStr) {
+        [vc setNetWorkParams:typeStr idStr:idStr];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

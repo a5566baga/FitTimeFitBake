@@ -7,6 +7,7 @@
 //
 
 #import "MyTabBarViewController.h"
+#import "MyNavigationViewController.h"
 #import "LearnBakeViewController.h"
 #import "BakeWayViewController.h"
 #import "ShoppingViewController.h"
@@ -46,7 +47,7 @@
 
 -(void)setStyleWithImage:(NSString *)imageStr selectImage:(NSString *)selectImageStr viewController:(UIViewController *)viewController title:(NSString *)title{
     viewController.title = title;
-    UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:viewController];
+    MyNavigationViewController * nvc = [[MyNavigationViewController alloc] initWithRootViewController:viewController];
     [nvc.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     [nvc.tabBarItem setImage:[UIImage imageNamed:imageStr]];
     [nvc.tabBarItem setSelectedImage:[UIImage imageNamed:selectImageStr]];

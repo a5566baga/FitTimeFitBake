@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//要跳转的页面
+#import "ScrollViewDetailViewController.h"
+#import "AllTypeViewController.h"
 @interface LearnBakeView : UIView
+
+@property(nonatomic, copy)void(^goToPicController)(ScrollViewDetailViewController * vc, NSString * typeStr, NSString * idStr);
+
 
 @end
