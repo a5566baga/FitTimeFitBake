@@ -9,7 +9,7 @@
 		<string>BebasNeue.otf</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>爱自己爱烘焙</string>
+	<string>爱烘焙爱生活</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

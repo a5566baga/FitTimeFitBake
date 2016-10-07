@@ -31,6 +31,7 @@
 		BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A031D901A8700A678E7 /* Main.storyboard */; };
 		BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A061D901A8700A678E7 /* Assets.xcassets */; };
 		BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */; };
+		BC7F71A71DA78ECE00DEA2B3 /* GetMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7F71A61DA78ECE00DEA2B3 /* GetMessageViewController.m */; };
 		BC97B7F71D9E207300E9CA2F /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7F61D9E207300E9CA2F /* FoundViewController.m */; };
 		BC97B7FA1D9E220600E9CA2F /* HotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7F91D9E220600E9CA2F /* HotDetailViewController.m */; };
 		BC97B7FD1D9E226100E9CA2F /* RecipeGuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7FC1D9E226100E9CA2F /* RecipeGuyViewController.m */; };
@@ -38,6 +39,15 @@
 		BC97B8031D9E241E00E9CA2F /* BigClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8021D9E241E00E9CA2F /* BigClassViewController.m */; };
 		BC97B8061D9E248400E9CA2F /* NiuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */; };
 		BC97B8091D9E267E00E9CA2F /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */; };
+		BC9F9EBC1DA51E750083B89E /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EBA1DA51E750083B89E /* MOBFoundation.framework */; };
+		BC9F9EBD1DA51E760083B89E /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EBB1DA51E750083B89E /* SMS_SDK.framework */; };
+		BC9F9EBF1DA51E920083B89E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EBE1DA51E920083B89E /* libz.tbd */; };
+		BC9F9EC11DA51E9D0083B89E /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EC01DA51E9D0083B89E /* libicucore.tbd */; };
+		BC9F9EC31DA51EAA0083B89E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EC21DA51EAA0083B89E /* MessageUI.framework */; };
+		BC9F9EC51DA51EB30083B89E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EC41DA51EB30083B89E /* JavaScriptCore.framework */; };
+		BC9F9EC71DA51EC10083B89E /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EC61DA51EC10083B89E /* libstdc++.tbd */; };
+		BC9F9EC91DA51EDC0083B89E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EC81DA51EDC0083B89E /* AddressBook.framework */; };
+		BC9F9ECB1DA51EE00083B89E /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9ECA1DA51EE00083B89E /* AddressBookUI.framework */; };
 		BCA0C3D01D9E13300049E4DB /* PinShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA0C3CF1D9E13300049E4DB /* PinShoppingViewController.m */; };
 		BCA0C3D31D9E13C00049E4DB /* ChoiceMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA0C3D21D9E13C00049E4DB /* ChoiceMenuViewController.m */; };
 		BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7F341D91605000D4D615 /* MyTabBarViewController.m */; };
@@ -109,6 +119,8 @@
 		BC4B3A061D901A8700A678E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4B3A091D901A8700A678E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4B3A0B1D901A8700A678E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC7F71A51DA78ECE00DEA2B3 /* GetMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMessageViewController.h; sourceTree = "<group>"; };
+		BC7F71A61DA78ECE00DEA2B3 /* GetMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMessageViewController.m; sourceTree = "<group>"; };
 		BC97B7F51D9E207300E9CA2F /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
 		BC97B7F61D9E207300E9CA2F /* FoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundViewController.m; sourceTree = "<group>"; };
 		BC97B7F81D9E220600E9CA2F /* HotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotDetailViewController.h; sourceTree = "<group>"; };
@@ -123,6 +135,15 @@
 		BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiuDetailViewController.m; sourceTree = "<group>"; };
 		BC97B8071D9E267E00E9CA2F /* SelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeViewController.h; sourceTree = "<group>"; };
 		BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
+		BC9F9EBA1DA51E750083B89E /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		BC9F9EBB1DA51E750083B89E /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		BC9F9EBE1DA51E920083B89E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BC9F9EC01DA51E9D0083B89E /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		BC9F9EC21DA51EAA0083B89E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		BC9F9EC41DA51EB30083B89E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		BC9F9EC61DA51EC10083B89E /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		BC9F9EC81DA51EDC0083B89E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		BC9F9ECA1DA51EE00083B89E /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		BCA0C3CE1D9E13300049E4DB /* PinShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinShoppingViewController.h; sourceTree = "<group>"; };
 		BCA0C3CF1D9E13300049E4DB /* PinShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinShoppingViewController.m; sourceTree = "<group>"; };
 		BCA0C3D11D9E13C00049E4DB /* ChoiceMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceMenuViewController.h; sourceTree = "<group>"; };
@@ -179,6 +200,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9F9ECB1DA51EE00083B89E /* AddressBookUI.framework in Frameworks */,
+				BC9F9EC91DA51EDC0083B89E /* AddressBook.framework in Frameworks */,
+				BC9F9EC71DA51EC10083B89E /* libstdc++.tbd in Frameworks */,
+				BC9F9EC51DA51EB30083B89E /* JavaScriptCore.framework in Frameworks */,
+				BC9F9EC31DA51EAA0083B89E /* MessageUI.framework in Frameworks */,
+				BC9F9EC11DA51E9D0083B89E /* libicucore.tbd in Frameworks */,
+				BC9F9EBF1DA51E920083B89E /* libz.tbd in Frameworks */,
+				BC9F9EBD1DA51E760083B89E /* SMS_SDK.framework in Frameworks */,
+				BC9F9EBC1DA51E750083B89E /* MOBFoundation.framework in Frameworks */,
 				91268B2CFC7947B41EFEC7DA /* libPods-FitTimeFitBake.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +219,13 @@
 		1792130A70CED542003EEDF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC9F9ECA1DA51EE00083B89E /* AddressBookUI.framework */,
+				BC9F9EC81DA51EDC0083B89E /* AddressBook.framework */,
+				BC9F9EC61DA51EC10083B89E /* libstdc++.tbd */,
+				BC9F9EC41DA51EB30083B89E /* JavaScriptCore.framework */,
+				BC9F9EC21DA51EAA0083B89E /* MessageUI.framework */,
+				BC9F9EC01DA51E9D0083B89E /* libicucore.tbd */,
+				BC9F9EBE1DA51E920083B89E /* libz.tbd */,
 				60B8C5E1D671A69111FF3A3C /* libPods-FitTimeFitBake.a */,
 			);
 			name = Frameworks;
@@ -311,6 +348,7 @@
 		BC4B39FA1D901A8700A678E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BC9F9EB91DA51E750083B89E /* SMS_SDK */,
 				BC1FFBDF1D955E2A0045D564 /* gif */,
 				BCAB7F531D917BCA00D4D615 /* font */,
 				BC4B39FD1D901A8700A678E7 /* AppDelegate.h */,
@@ -343,6 +381,8 @@
 				BC15F16E1D9C09E4003EE97A /* LoginViewController.m */,
 				BC15F1701D9C09EF003EE97A /* RegisterViewController.h */,
 				BC15F1711D9C09EF003EE97A /* RegisterViewController.m */,
+				BC7F71A51DA78ECE00DEA2B3 /* GetMessageViewController.h */,
+				BC7F71A61DA78ECE00DEA2B3 /* GetMessageViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -563,6 +603,15 @@
 			path = tabBar;
 			sourceTree = "<group>";
 		};
+		BC9F9EB91DA51E750083B89E /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				BC9F9EBA1DA51E750083B89E /* MOBFoundation.framework */,
+				BC9F9EBB1DA51E750083B89E /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
 		BCAB7F391D91617200D4D615 /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -721,6 +770,7 @@
 				BC15F2381D9D52E5003EE97A /* ScrollViewDetailViewController.m in Sources */,
 				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
 				BCA0C3D31D9E13C00049E4DB /* ChoiceMenuViewController.m in Sources */,
+				BC7F71A71DA78ECE00DEA2B3 /* GetMessageViewController.m in Sources */,
 				BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
 				BC97B8001D9E22BC00E9CA2F /* DailyActivityViewController.m in Sources */,
@@ -878,6 +928,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FitTimeFitBake/SMS_SDK",
+				);
 				GCC_PREFIX_HEADER = "FitTimeFitBake/工具类/PrefixHeader.pch";
 				INFOPLIST_FILE = FitTimeFitBake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -893,6 +947,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: DuanChongchong China Henan province (P28THB67HH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FitTimeFitBake/SMS_SDK",
+				);
 				GCC_PREFIX_HEADER = "FitTimeFitBake/工具类/PrefixHeader.pch";
 				INFOPLIST_FILE = FitTimeFitBake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

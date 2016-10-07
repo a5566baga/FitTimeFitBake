@@ -9,7 +9,10 @@
 #import "AppDelegate.h"
 #import "MyTabBarViewController.h"
 #import <AFNetworking.h>
+#import <SMS_SDK/SMSSDK.h>
 
+#define App_Key @"17a3a2769d4cb"
+#define App_Secret @"2671f6c49516a81f418eb4a930029477"
 @interface AppDelegate ()
 @property(nonatomic, strong)UIAlertController * alertVC;
 @end
@@ -18,7 +21,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [SMSSDK registerApp:App_Key withSecret:App_Secret];
     
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UIViewController * viewVC = [[UIViewController alloc] init];

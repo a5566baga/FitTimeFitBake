@@ -523,7 +523,7 @@
 #pragma mark =========== 工具类
 -(NSArray *)getParams:(NSInteger)index{
     NSArray<Item_Bake *> * array = _model.item;
-    NSString * linkStr = array[index-1].link;
+    NSString * linkStr = array[index].link;
     NSArray * strArray = [linkStr componentsSeparatedByString:@"/"];
     NSString * typeStr = strArray[strArray.count-2];
     NSString * idStr = [NSString stringWithFormat:@"%@", strArray.lastObject];
