@@ -23,6 +23,8 @@
 
 @interface LearnBakeTableViewCell : UITableViewCell
 
+@property(nonatomic, strong)NSTimer * timer;
+
 /**
  轮播图的跳转
  */

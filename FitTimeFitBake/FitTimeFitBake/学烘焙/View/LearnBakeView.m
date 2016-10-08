@@ -13,7 +13,6 @@
 #import <SVProgressHUD.h>
 
 #import "LearnBakeModel.h"
-#import "LearnBakeTableViewCell.h"
 
 #define CellID @"myCell"
 @interface LearnBakeView ()<UITableViewDelegate, UITableViewDataSource>
@@ -85,21 +84,31 @@
     return _modelsArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LearnBakeTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:CellID];
-    if (cell == nil) {
-        cell = [[LearnBakeTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellID];
+     _cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+    if (_cell == nil) {
+        _cell = [[LearnBakeTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellID];
     }
-    for (UIView *view in cell.subviews) {
+    for (UIView *view in _cell.subviews) {
         [view removeFromSuperview];
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [cell setCellStyle:_modelsArray[indexPath.section]];
+    _cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [_cell setCellStyle:_modelsArray[indexPath.section]];
     
-    [cell setGoToPicDetail:^(ScrollViewDetailViewController * vc, NSString * type, NSString * idStr) {
-        self.goToPicController(vc, type, idStr);
+    __weak typeof(self) mySelf = self;
+//    轮播图
+    [_cell setGoToPicDetail:^(ScrollViewDetailViewController * vc, NSString * type, NSString * idStr) {
+        mySelf.goToPicController(vc, type, idStr);
     }];
     
-    return cell;
+//    分类食谱
+    [_cell setGoToFoodTypeDetail:^(AllTypeViewController * vc, NSString * type, NSString * idStr) {
+        mySelf.goToFoodTypeDetailController(vc, type, idStr);
+    }];
+    [_cell setGoToSelectTypeDetail:^(SelectTypeViewController * vc, NSString * type, NSString * idStr) {
+        mySelf.goToSelectTypeDetailController(vc, type, idStr);
+    }];
+    
+    return _cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([_modelsArray[indexPath.section].title isEqualToString:@"轮播图"]) {

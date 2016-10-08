@@ -1,3 +1,4 @@
+
 //
 //  LearnBakeTableViewCell.m
 //  FitTimeFitBake
@@ -30,7 +31,6 @@
 @property(nonatomic, strong)UILabel * titlesLabel;
 @property(nonatomic, strong)NSMutableArray * picArray;
 @property(nonatomic, strong)NSMutableArray * titleArray;
-@property(nonatomic, strong)NSTimer * timer;
 @property(nonatomic, strong)UITapGestureRecognizer * tap;
 //分类食谱
 @property(nonatomic, strong)UIImageView * leftView;
@@ -165,7 +165,7 @@
 //tap事件
 -(void)tapPic:(UITapGestureRecognizer *)tap{
     UIScrollView * nowScrollView = (UIScrollView *)tap.view;
-    NSInteger index = nowScrollView.contentOffset.x/self.width;
+    NSInteger index = nowScrollView.contentOffset.x/self.width-1;
     ScrollViewDetailViewController * scorllViewVC = [[ScrollViewDetailViewController alloc] init];
     NSArray * parmasArray = [self getParams:index];
     self.goToPicDetail(scorllViewVC, parmasArray[0], parmasArray[1]);
@@ -183,14 +183,17 @@
 #pragma mark
 #pragma mark ============ scrollView的代理(轮播处理)
 -(void)movePicture{
-    if (_scrollView.contentOffset.x/self.width == 0) {
-        _scrollView.contentOffset = CGPointMake(self.width*(_titleArray.count-2), 0) ;
-    }else if (_scrollView.contentOffset.x/self.width == _titleArray.count+1-2){
+    NSInteger index = _scrollView.contentOffset.x/self.width;
+    if (index == 0) {
+        _scrollView.contentOffset = CGPointMake(self.width*(_titleArray.count-1), 0) ;
+        _pageControl.currentPage = _titleArray.count-3;
+    }else if (index == _titleArray.count-1){
         _scrollView.contentOffset = CGPointMake(self.width, 0);
+        _pageControl.currentPage = 0;
+    }else{
+        _pageControl.currentPage = index-1;
+        _titlesLabel.text = _titleArray[index-1];
     }
-    NSInteger index = _scrollView.contentOffset.x/self.width-1;
-    _pageControl.currentPage = index;
-    _titlesLabel.text = _titleArray[index];
 }
 
 //开始减速，这里调用移动的方法
@@ -523,6 +526,9 @@
 #pragma mark =========== 工具类
 -(NSArray *)getParams:(NSInteger)index{
     NSArray<Item_Bake *> * array = _model.item;
+    if (index == array.count) {
+        index--;
+    }
     NSString * linkStr = array[index].link;
     NSArray * strArray = [linkStr componentsSeparatedByString:@"/"];
     NSString * typeStr = strArray[strArray.count-2];

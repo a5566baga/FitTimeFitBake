@@ -73,6 +73,10 @@
 		BCC9F2D61D9BDC36009C54F1 /* QuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC9F2D51D9BDC36009C54F1 /* QuestionModel.m */; };
 		BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */; };
 		BCEE7CBF1D92B17A0048DBBC /* LearnBakeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */; };
+		BCF6B55B1DA90B6600D40A85 /* MaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B55A1DA90B6600D40A85 /* MaterialModel.m */; };
+		BCF6B55E1DA90BC400D40A85 /* StepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B55D1DA90BC400D40A85 /* StepModel.m */; };
+		BCF6B5611DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B5601DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m */; };
+		BCF6B5641DA90EA900D40A85 /* ScrollviewDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B5631DA90EA900D40A85 /* ScrollviewDetailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +196,14 @@
 		BCEE7CBB1D92A1AB0048DBBC /* LearnBakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeView.m; sourceTree = "<group>"; };
 		BCEE7CBD1D92B17A0048DBBC /* LearnBakeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnBakeTableViewCell.h; sourceTree = "<group>"; };
 		BCEE7CBE1D92B17A0048DBBC /* LearnBakeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnBakeTableViewCell.m; sourceTree = "<group>"; };
+		BCF6B5591DA90B6600D40A85 /* MaterialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialModel.h; sourceTree = "<group>"; };
+		BCF6B55A1DA90B6600D40A85 /* MaterialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialModel.m; sourceTree = "<group>"; };
+		BCF6B55C1DA90BC400D40A85 /* StepModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepModel.h; sourceTree = "<group>"; };
+		BCF6B55D1DA90BC400D40A85 /* StepModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepModel.m; sourceTree = "<group>"; };
+		BCF6B55F1DA90E8F00D40A85 /* ScrollviewDetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollviewDetailHeaderView.h; sourceTree = "<group>"; };
+		BCF6B5601DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollviewDetailHeaderView.m; sourceTree = "<group>"; };
+		BCF6B5621DA90EA900D40A85 /* ScrollviewDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollviewDetailCell.h; sourceTree = "<group>"; };
+		BCF6B5631DA90EA900D40A85 /* ScrollviewDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollviewDetailCell.m; sourceTree = "<group>"; };
 		D91D8AF74C439ACF74930561 /* Pods-FitTimeFitBake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTimeFitBake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,6 +294,10 @@
 		BC15F2311D9D4458003EE97A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCF6B5591DA90B6600D40A85 /* MaterialModel.h */,
+				BCF6B55A1DA90B6600D40A85 /* MaterialModel.m */,
+				BCF6B55C1DA90BC400D40A85 /* StepModel.h */,
+				BCF6B55D1DA90BC400D40A85 /* StepModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,6 +305,10 @@
 		BC15F2321D9D4458003EE97A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCF6B55F1DA90E8F00D40A85 /* ScrollviewDetailHeaderView.h */,
+				BCF6B5601DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m */,
+				BCF6B5621DA90EA900D40A85 /* ScrollviewDetailCell.h */,
+				BCF6B5631DA90EA900D40A85 /* ScrollviewDetailCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -770,8 +790,10 @@
 				BC15F2381D9D52E5003EE97A /* ScrollViewDetailViewController.m in Sources */,
 				BCAB7F461D91674F00D4D615 /* LearnBakeViewController.m in Sources */,
 				BCA0C3D31D9E13C00049E4DB /* ChoiceMenuViewController.m in Sources */,
+				BCF6B5641DA90EA900D40A85 /* ScrollviewDetailCell.m in Sources */,
 				BC7F71A71DA78ECE00DEA2B3 /* GetMessageViewController.m in Sources */,
 				BCAB7F381D9160F000D4D615 /* MyNavigationViewController.m in Sources */,
+				BCF6B55B1DA90B6600D40A85 /* MaterialModel.m in Sources */,
 				BC4B39FF1D901A8700A678E7 /* AppDelegate.m in Sources */,
 				BC97B8001D9E22BC00E9CA2F /* DailyActivityViewController.m in Sources */,
 				BC1FFBAB1D93F97F0045D564 /* MyDayActityButton.m in Sources */,
@@ -779,6 +801,7 @@
 				BCC9F1BF1D9952DD009C54F1 /* PicItem.m in Sources */,
 				BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */,
 				BCC9F2781D9A8F44009C54F1 /* TuanShopModel.m in Sources */,
+				BCF6B55E1DA90BC400D40A85 /* StepModel.m in Sources */,
 				BC97B7FD1D9E226100E9CA2F /* RecipeGuyViewController.m in Sources */,
 				BC1FFBF51D9578FE0045D564 /* BakeWayTableViewCell.m in Sources */,
 				BCA0C3D01D9E13300049E4DB /* PinShoppingViewController.m in Sources */,
@@ -788,6 +811,7 @@
 				BC15F16C1D9BF2AF003EE97A /* QuestionTableViewCell.m in Sources */,
 				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
 				BC97B7F71D9E207300E9CA2F /* FoundViewController.m in Sources */,
+				BCF6B5611DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m in Sources */,
 				BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */,
 				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
 				BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */,
