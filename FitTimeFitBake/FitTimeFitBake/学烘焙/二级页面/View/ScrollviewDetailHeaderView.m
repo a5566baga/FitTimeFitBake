@@ -45,6 +45,8 @@
 //材料名称  数量
 @property(nonatomic, strong)UILabel * materialNameLabel;
 @property(nonatomic, strong)UILabel * mateialNumLabel;
+//做法
+@property(nonatomic, strong)UILabel * makeWayLabel;
 
 @end
 
@@ -59,6 +61,7 @@
     [self initFotDetailView];
     [self initForMateralView];
     [self initForMateriaDetailView];
+    [self initForFooterView];
 }
 
 #pragma mark
@@ -166,14 +169,14 @@
         _quantityLaebl.font = [UIFont systemFontOfSize:14];
         _quantityLaebl.textAlignment = NSTextAlignmentLeft;
         [self.quantityBgView addSubview:_quantityLaebl];
-        _geLabel = [[UILabel alloc] initWithFrame:CGRectMake(_quantityBgView.width-20, 0, 20, 20)];
+        _geLabel = [[UILabel alloc] initWithFrame:CGRectMake(_quantityBgView.width-30, 0, 30, 20)];
         _geLabel.text = _headerDic[@"unit"];
         _geLabel.textAlignment = NSTextAlignmentRight;
         _geLabel.font = [UIFont systemFontOfSize:14];
         _geLabel.textColor = [UIColor blackColor];
         [self.quantityBgView addSubview:_geLabel];
         
-        float btnWidth = (_quantityBgView.width-50)/6;
+        float btnWidth = (_quantityBgView.width-60)/6;
         _subButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_quantityLaebl.frame)+btnWidth, 0, btnWidth, 20)];
         [_subButton setTitle:@"–" forState:UIControlStateNormal];
         [_subButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -223,7 +226,7 @@
 #pragma mark ========= 详细材料
 -(void)initForMateriaDetailView{
     float materialWidth = (self.width-2*LEFT_MARGIN)/2;
-    if (_materialArray.count > 1) {
+    if (_materialArray.count > 1 && ![_materialArray[1].weight isEqualToString:@""]) {
         for (NSInteger i = 0; i < _materialArray.count; i++) {
             _materialNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(LEFT_MARGIN, CGRectGetMaxY(_quantityBgView.frame)+TOP_MARGIN+(20+10)*i, materialWidth, 20)];
             _materialNameLabel.textColor = [UIColor blackColor];
@@ -240,18 +243,31 @@
             [self addSubview:_mateialNumLabel];
         }
     }else{
-        NSString * str = _materialArray[0].name;
+        NSMutableString * str = [[NSMutableString alloc] init];
+        for (NSInteger i = 0; i < _materialArray.count; i++) {
+            [str appendFormat:@"%@ ", _materialArray[i].name];
+        }
         float materHeight = [self labelHeight:[UIFont systemFontOfSize:14] text:str width:self.width-2*LEFT_MARGIN];
         _materialNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(LEFT_MARGIN, CGRectGetMaxY(_quantityBgView.frame)+TOP_MARGIN, self.width-2*LEFT_MARGIN, materHeight)];
         _materialNameLabel.textColor = [UIColor blackColor];
         _materialNameLabel.textAlignment = NSTextAlignmentLeft;
         _materialNameLabel.font = [UIFont systemFontOfSize:14];
-        _materialNameLabel.text = _materialArray[0].name;
+        _materialNameLabel.text = str;
         _materialNameLabel.numberOfLines = 0;
         [self addSubview:_materialNameLabel];
     }
 }
 
+#pragma mark
+#pragma mark ============= 设置底下的内容
+-(void)initForFooterView{
+    _makeWayLabel = [[UILabel alloc] initWithFrame:CGRectMake(LEFT_MARGIN, CGRectGetMaxY(_materialNameLabel.frame)+LEFT_MARGIN, self.width-2*LEFT_MARGIN, 15)];
+    _makeWayLabel.textAlignment = NSTextAlignmentLeft;
+    _makeWayLabel.textColor = [UIColor blackColor];
+    _makeWayLabel.font = [UIFont systemFontOfSize:15];
+    _makeWayLabel.text = @"做法";
+    [self addSubview:_makeWayLabel];
+}
 
 //设置数据
 -(void)setHeaderViewStyle:(NSDictionary *)dic maters:(NSArray<MaterialModel *> *)maters{

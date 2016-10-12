@@ -39,10 +39,13 @@
 //    轮播图
     [_learnBakeView setGoToPicController:^(ScrollViewDetailViewController * vc, NSString * typeStr, NSString * idStr) {
         if ([typeStr isEqualToString:@"recipe"]) {
+            //做法详情
             [vc setNetWorkParams:typeStr idStr:idStr];
             [weakSelf.navigationController pushViewController:vc animated:YES];
         }else{
+            //购物
             PinShoppingViewController * pinVC = [[PinShoppingViewController alloc] init];
+            [pinVC setNetWorkParams:typeStr idStr:idStr];
             [weakSelf.navigationController pushViewController:pinVC animated:YES];
         }
     }];

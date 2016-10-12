@@ -31,6 +31,9 @@
 		BC4B3A051D901A8700A678E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A031D901A8700A678E7 /* Main.storyboard */; };
 		BC4B3A071D901A8700A678E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A061D901A8700A678E7 /* Assets.xcassets */; };
 		BC4B3A0A1D901A8700A678E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4B3A081D901A8700A678E7 /* LaunchScreen.storyboard */; };
+		BC4EEC551DAD30B400BA8C12 /* SelectTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4EEC541DAD30B400BA8C12 /* SelectTypeTableViewCell.m */; };
+		BC4EEC591DAE52A500BA8C12 /* MyErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4EEC581DAE52A500BA8C12 /* MyErrorView.m */; };
+		BC4EEC5C1DAE52B900BA8C12 /* MyBackTopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4EEC5B1DAE52B900BA8C12 /* MyBackTopButton.m */; };
 		BC7F71A71DA78ECE00DEA2B3 /* GetMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7F71A61DA78ECE00DEA2B3 /* GetMessageViewController.m */; };
 		BC97B7F71D9E207300E9CA2F /* FoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7F61D9E207300E9CA2F /* FoundViewController.m */; };
 		BC97B7FA1D9E220600E9CA2F /* HotDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B7F91D9E220600E9CA2F /* HotDetailViewController.m */; };
@@ -77,6 +80,9 @@
 		BCF6B55E1DA90BC400D40A85 /* StepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B55D1DA90BC400D40A85 /* StepModel.m */; };
 		BCF6B5611DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B5601DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m */; };
 		BCF6B5641DA90EA900D40A85 /* ScrollviewDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF6B5631DA90EA900D40A85 /* ScrollviewDetailCell.m */; };
+		BCFD4D7E1DABCEF00034CD1A /* PinTuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFD4D7D1DABCEF00034CD1A /* PinTuanTableViewCell.m */; };
+		BCFD4D811DABCEFD0034CD1A /* PinView.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFD4D801DABCEFD0034CD1A /* PinView.m */; };
+		BCFD4D841DABEF920034CD1A /* SelectTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFD4D831DABEF920034CD1A /* SelectTypeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +129,12 @@
 		BC4B3A061D901A8700A678E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC4B3A091D901A8700A678E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4B3A0B1D901A8700A678E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4EEC531DAD30B400BA8C12 /* SelectTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeTableViewCell.h; sourceTree = "<group>"; };
+		BC4EEC541DAD30B400BA8C12 /* SelectTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeTableViewCell.m; sourceTree = "<group>"; };
+		BC4EEC571DAE52A500BA8C12 /* MyErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyErrorView.h; sourceTree = "<group>"; };
+		BC4EEC581DAE52A500BA8C12 /* MyErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyErrorView.m; sourceTree = "<group>"; };
+		BC4EEC5A1DAE52B900BA8C12 /* MyBackTopButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBackTopButton.h; sourceTree = "<group>"; };
+		BC4EEC5B1DAE52B900BA8C12 /* MyBackTopButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBackTopButton.m; sourceTree = "<group>"; };
 		BC7F71A51DA78ECE00DEA2B3 /* GetMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMessageViewController.h; sourceTree = "<group>"; };
 		BC7F71A61DA78ECE00DEA2B3 /* GetMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMessageViewController.m; sourceTree = "<group>"; };
 		BC97B7F51D9E207300E9CA2F /* FoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundViewController.h; sourceTree = "<group>"; };
@@ -204,6 +216,12 @@
 		BCF6B5601DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollviewDetailHeaderView.m; sourceTree = "<group>"; };
 		BCF6B5621DA90EA900D40A85 /* ScrollviewDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollviewDetailCell.h; sourceTree = "<group>"; };
 		BCF6B5631DA90EA900D40A85 /* ScrollviewDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollviewDetailCell.m; sourceTree = "<group>"; };
+		BCFD4D7C1DABCEF00034CD1A /* PinTuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinTuanTableViewCell.h; sourceTree = "<group>"; };
+		BCFD4D7D1DABCEF00034CD1A /* PinTuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinTuanTableViewCell.m; sourceTree = "<group>"; };
+		BCFD4D7F1DABCEFD0034CD1A /* PinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinView.h; sourceTree = "<group>"; };
+		BCFD4D801DABCEFD0034CD1A /* PinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinView.m; sourceTree = "<group>"; };
+		BCFD4D821DABEF920034CD1A /* SelectTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeModel.h; sourceTree = "<group>"; };
+		BCFD4D831DABEF920034CD1A /* SelectTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeModel.m; sourceTree = "<group>"; };
 		D91D8AF74C439ACF74930561 /* Pods-FitTimeFitBake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitTimeFitBake.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitTimeFitBake/Pods-FitTimeFitBake.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -298,6 +316,8 @@
 				BCF6B55A1DA90B6600D40A85 /* MaterialModel.m */,
 				BCF6B55C1DA90BC400D40A85 /* StepModel.h */,
 				BCF6B55D1DA90BC400D40A85 /* StepModel.m */,
+				BCFD4D821DABEF920034CD1A /* SelectTypeModel.h */,
+				BCFD4D831DABEF920034CD1A /* SelectTypeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +329,12 @@
 				BCF6B5601DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m */,
 				BCF6B5621DA90EA900D40A85 /* ScrollviewDetailCell.h */,
 				BCF6B5631DA90EA900D40A85 /* ScrollviewDetailCell.m */,
+				BCFD4D7C1DABCEF00034CD1A /* PinTuanTableViewCell.h */,
+				BCFD4D7D1DABCEF00034CD1A /* PinTuanTableViewCell.m */,
+				BCFD4D7F1DABCEFD0034CD1A /* PinView.h */,
+				BCFD4D801DABCEFD0034CD1A /* PinView.m */,
+				BC4EEC531DAD30B400BA8C12 /* SelectTypeTableViewCell.h */,
+				BC4EEC541DAD30B400BA8C12 /* SelectTypeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +452,7 @@
 		BC4B3A151D901D1900A678E7 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BC4EEC561DAE529300BA8C12 /* myView */,
 				BC1FFBE61D95621C0045D564 /* NetWorkData */,
 				BCAB7F391D91617200D4D615 /* category */,
 				BC4B3A261D901E9400A678E7 /* DB */,
@@ -623,6 +650,17 @@
 			path = tabBar;
 			sourceTree = "<group>";
 		};
+		BC4EEC561DAE529300BA8C12 /* myView */ = {
+			isa = PBXGroup;
+			children = (
+				BC4EEC571DAE52A500BA8C12 /* MyErrorView.h */,
+				BC4EEC581DAE52A500BA8C12 /* MyErrorView.m */,
+				BC4EEC5A1DAE52B900BA8C12 /* MyBackTopButton.h */,
+				BC4EEC5B1DAE52B900BA8C12 /* MyBackTopButton.m */,
+			);
+			path = myView;
+			sourceTree = "<group>";
+		};
 		BC9F9EB91DA51E750083B89E /* SMS_SDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -800,6 +838,8 @@
 				BCAB7F491D91676200D4D615 /* BakeWayViewController.m in Sources */,
 				BCC9F1BF1D9952DD009C54F1 /* PicItem.m in Sources */,
 				BCAB7F351D91605000D4D615 /* MyTabBarViewController.m in Sources */,
+				BC4EEC551DAD30B400BA8C12 /* SelectTypeTableViewCell.m in Sources */,
+				BC4EEC5C1DAE52B900BA8C12 /* MyBackTopButton.m in Sources */,
 				BCC9F2781D9A8F44009C54F1 /* TuanShopModel.m in Sources */,
 				BCF6B55E1DA90BC400D40A85 /* StepModel.m in Sources */,
 				BC97B7FD1D9E226100E9CA2F /* RecipeGuyViewController.m in Sources */,
@@ -808,11 +848,14 @@
 				BC97B8031D9E241E00E9CA2F /* BigClassViewController.m in Sources */,
 				BC97B8061D9E248400E9CA2F /* NiuDetailViewController.m in Sources */,
 				BC1FFBDE1D95487C0045D564 /* BakeView.m in Sources */,
+				BC4EEC591DAE52A500BA8C12 /* MyErrorView.m in Sources */,
 				BC15F16C1D9BF2AF003EE97A /* QuestionTableViewCell.m in Sources */,
 				BCAB7F521D91678200D4D615 /* MeViewController.m in Sources */,
 				BC97B7F71D9E207300E9CA2F /* FoundViewController.m in Sources */,
 				BCF6B5611DA90E8F00D40A85 /* ScrollviewDetailHeaderView.m in Sources */,
 				BC1FFBB21D9409320045D564 /* MyBigClassButton.m in Sources */,
+				BCFD4D841DABEF920034CD1A /* SelectTypeModel.m in Sources */,
+				BCFD4D7E1DABCEF00034CD1A /* PinTuanTableViewCell.m in Sources */,
 				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
 				BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */,
 				BC1FFBF21D9578620045D564 /* BakeWayHeaderView.m in Sources */,
@@ -823,6 +866,7 @@
 				BCAB7F411D91617200D4D615 /* UINavigationItem+MyNavItem.m in Sources */,
 				BCC9F2AB1D9B7ABC009C54F1 /* QuestionView.m in Sources */,
 				BCEE7CBC1D92A1AB0048DBBC /* LearnBakeView.m in Sources */,
+				BCFD4D811DABCEFD0034CD1A /* PinView.m in Sources */,
 				BC4B39FC1D901A8700A678E7 /* main.m in Sources */,
 				BCC9F1401D98148C009C54F1 /* MyZanButton.m in Sources */,
 				BCC9F27B1D9AA2D2009C54F1 /* TuanShopTableViewCell.m in Sources */,

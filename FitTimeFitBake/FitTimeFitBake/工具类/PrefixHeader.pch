@@ -33,5 +33,10 @@
 //应用程序的主色调。
 #define ZZQMainColor(r,g,b)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 
+//回到顶部的button
+#import "MyBackTopButton.h"
+//错误提示信息
+#import "MyErrorView.h"
+
 
 #endif /* PrefixHeader_pch */

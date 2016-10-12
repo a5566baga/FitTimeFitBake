@@ -110,7 +110,8 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     float height = [self labelHeight:[UIFont systemFontOfSize:14] text:_stepArray[indexPath.row].text width:self.view.width-60];
-    return height + 80;
+    height += 10 + self.view.width*0.6/7*5+10;
+    return height;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     ScrollviewDetailHeaderView * headerView = [[ScrollviewDetailHeaderView alloc] init];
@@ -126,12 +127,16 @@
     height += [self labelHeight:[UIFont systemFontOfSize:13] text:_recipeDic[@"coverSummary"] width:self.view.width-30]+10;
     height += 20+30;
     height += 20+20+20+20;
-    if (_materialArray.count > 1) {
+    if (_materialArray.count > 1 && ![_materialArray[1].weight isEqualToString:@""]) {
         height += _materialArray.count*(20+10)+20;
     }else{
-        NSString * str = _materialArray[0].name;
+        NSMutableString * str = [[NSMutableString alloc] init];
+        for (NSInteger i = 0; i < _materialArray.count; i++) {
+            [str appendFormat:@"%@ ", _materialArray[i].name];
+        }
         height += [self labelHeight:[UIFont systemFontOfSize:14] text:str width:self.view.width-30]+20;
     }
+    height += 30;
     return height+20;
 }
 

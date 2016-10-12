@@ -247,7 +247,7 @@
     NSInteger index = button.tag - 200;
     NSArray * params = [self getParams:index];
     SelectTypeViewController * selectTypeVC = [[SelectTypeViewController alloc] init];
-    self.goToSelectTypeDetail(selectTypeVC, params[0], params[0]);
+    self.goToSelectTypeDetail(selectTypeVC, params[0], params[1]);
 }
 -(void)checkAllButton:(UIButton *)button{
 #warning 单独处理

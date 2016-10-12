@@ -10,4 +10,6 @@
 
 @interface PinShoppingViewController : UIViewController
 
+-(void)setNetWorkParams:(NSString *)typeStr idStr:(NSString *)idStr;
+
 @end
