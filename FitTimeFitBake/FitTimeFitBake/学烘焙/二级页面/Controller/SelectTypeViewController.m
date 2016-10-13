@@ -120,6 +120,9 @@ static int pageSize = 10;
 }
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
 //    拼接字符串，请求数据
+    _nameStr = searchBar.text;
+    [self initForData];
+    [_searchBar resignFirstResponder];
 }
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
     [_searchBar resignFirstResponder];

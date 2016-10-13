@@ -475,6 +475,15 @@
     _niuPicView.clipsToBounds = YES;
     [_niuPicView sd_setImageWithURL:[NSURL URLWithString:[_model.item.firstObject image]]];
     [self addSubview:_niuPicView];
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(niuAction:)];
+    tap.numberOfTapsRequired = 1;
+    [_niuPicView addGestureRecognizer:tap];
+}
+-(void)niuAction:(UITapGestureRecognizer *)tap{
+    NSArray * array = [self getParams:0];
+    NiuDetailViewController * niuDetailVC = [[NiuDetailViewController alloc] init];
+    self.goToNiuMemberDetail(niuDetailVC, array[0], array[1]);
 }
 #pragma mark
 #pragma mark ========= 通过不同的类型创建不同的cell样式

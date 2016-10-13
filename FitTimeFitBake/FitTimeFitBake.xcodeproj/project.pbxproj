@@ -42,6 +42,8 @@
 		BC97B8031D9E241E00E9CA2F /* BigClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8021D9E241E00E9CA2F /* BigClassViewController.m */; };
 		BC97B8061D9E248400E9CA2F /* NiuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */; };
 		BC97B8091D9E267E00E9CA2F /* SelectTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */; };
+		BC97DFC91DAFACC300A0F229 /* NiuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97DFC81DAFACC300A0F229 /* NiuModel.m */; };
+		BC97DFCC1DAFBA2800A0F229 /* NiuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC97DFCB1DAFBA2800A0F229 /* NiuTableViewCell.m */; };
 		BC9F9EBC1DA51E750083B89E /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EBA1DA51E750083B89E /* MOBFoundation.framework */; };
 		BC9F9EBD1DA51E760083B89E /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EBB1DA51E750083B89E /* SMS_SDK.framework */; };
 		BC9F9EBF1DA51E920083B89E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F9EBE1DA51E920083B89E /* libz.tbd */; };
@@ -151,6 +153,10 @@
 		BC97B8051D9E248400E9CA2F /* NiuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiuDetailViewController.m; sourceTree = "<group>"; };
 		BC97B8071D9E267E00E9CA2F /* SelectTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeViewController.h; sourceTree = "<group>"; };
 		BC97B8081D9E267E00E9CA2F /* SelectTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeViewController.m; sourceTree = "<group>"; };
+		BC97DFC71DAFACC300A0F229 /* NiuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NiuModel.h; sourceTree = "<group>"; };
+		BC97DFC81DAFACC300A0F229 /* NiuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiuModel.m; sourceTree = "<group>"; };
+		BC97DFCA1DAFBA2800A0F229 /* NiuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NiuTableViewCell.h; sourceTree = "<group>"; };
+		BC97DFCB1DAFBA2800A0F229 /* NiuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NiuTableViewCell.m; sourceTree = "<group>"; };
 		BC9F9EBA1DA51E750083B89E /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		BC9F9EBB1DA51E750083B89E /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
 		BC9F9EBE1DA51E920083B89E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -318,6 +324,8 @@
 				BCF6B55D1DA90BC400D40A85 /* StepModel.m */,
 				BCFD4D821DABEF920034CD1A /* SelectTypeModel.h */,
 				BCFD4D831DABEF920034CD1A /* SelectTypeModel.m */,
+				BC97DFC71DAFACC300A0F229 /* NiuModel.h */,
+				BC97DFC81DAFACC300A0F229 /* NiuModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +343,8 @@
 				BCFD4D801DABCEFD0034CD1A /* PinView.m */,
 				BC4EEC531DAD30B400BA8C12 /* SelectTypeTableViewCell.h */,
 				BC4EEC541DAD30B400BA8C12 /* SelectTypeTableViewCell.m */,
+				BC97DFCA1DAFBA2800A0F229 /* NiuTableViewCell.h */,
+				BC97DFCB1DAFBA2800A0F229 /* NiuTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -857,9 +867,11 @@
 				BCFD4D841DABEF920034CD1A /* SelectTypeModel.m in Sources */,
 				BCFD4D7E1DABCEF00034CD1A /* PinTuanTableViewCell.m in Sources */,
 				BCAB7F4F1D91677700D4D615 /* QuestionViewController.m in Sources */,
+				BC97DFCC1DAFBA2800A0F229 /* NiuTableViewCell.m in Sources */,
 				BC15F1751D9C1FD6003EE97A /* MyOtherWayLoginButton.m in Sources */,
 				BC1FFBF21D9578620045D564 /* BakeWayHeaderView.m in Sources */,
 				BC1FFBA51D93C2F00045D564 /* MyFoundButton.m in Sources */,
+				BC97DFC91DAFACC300A0F229 /* NiuModel.m in Sources */,
 				BCAB7F421D91617200D4D615 /* UIView+MyPositionSize.m in Sources */,
 				BC15F16F1D9C09E4003EE97A /* LoginViewController.m in Sources */,
 				BC1FFBEC1D956E8D0045D564 /* BakeWayModel.m in Sources */,

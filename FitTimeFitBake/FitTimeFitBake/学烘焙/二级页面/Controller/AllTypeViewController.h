@@ -10,4 +10,6 @@
 
 @interface AllTypeViewController : UIViewController
 
+-(void)setSelectParams:(NSString *)typeStr idStr:(NSString *)idStr;
+
 @end

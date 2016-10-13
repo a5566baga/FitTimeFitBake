@@ -61,6 +61,17 @@
         [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     
+//    神器部落
+    [_learnBakeView setGoToNiuMemberDetailController:^(NiuDetailViewController * niuVC, NSString * typeStr, NSString * idStr) {
+        [niuVC setSelectParams:typeStr idStr:idStr];
+        [weakSelf.navigationController pushViewController:niuVC animated:YES];
+    }];
+//    拼团
+//    精选菜单
+//    热门榜单
+//    食谱达人
+//    日常活动
+//    大课堂
 }
 
 - (void)didReceiveMemoryWarning {

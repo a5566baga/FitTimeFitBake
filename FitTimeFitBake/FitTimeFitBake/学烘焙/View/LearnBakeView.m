@@ -108,6 +108,11 @@
         mySelf.goToSelectTypeDetailController(vc, type, idStr);
     }];
     
+//    牛气部落
+    [_cell setGoToNiuMemberDetail:^(NiuDetailViewController * niuVC, NSString * type, NSString * idStr) {
+        mySelf.goToNiuMemberDetailController(niuVC, type, idStr);
+    }];
+    
     return _cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -9,7 +9,8 @@
 #import "AllTypeViewController.h"
 
 @interface AllTypeViewController ()
-
+@property(nonatomic, copy)NSString * typeStr;
+@property(nonatomic, copy)NSString * idStr;
 @end
 
 @implementation AllTypeViewController
@@ -19,6 +20,20 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
 }
+
+#pragma mark
+#pragma mark ======== 赋值
+-(void)setSelectParams:(NSString *)typeStr idStr:(NSString *)idStr{
+    _typeStr = typeStr;
+    _idStr = idStr;
+}
+
+#pragma mark
+#pragma mark ========== 请求数据
+
+
+#pragma mark
+#pragma mark ========== 基本页面设置
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.tabBarController.tabBar.hidden = YES;

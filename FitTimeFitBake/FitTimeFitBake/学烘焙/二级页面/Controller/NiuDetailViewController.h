@@ -10,4 +10,6 @@
 
 @interface NiuDetailViewController : UIViewController
 
+-(void)setSelectParams:(NSString *)typeStr idStr:(NSString *)idStr;
+
 @end
