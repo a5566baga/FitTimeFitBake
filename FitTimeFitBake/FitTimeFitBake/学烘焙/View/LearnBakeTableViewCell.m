@@ -45,6 +45,7 @@
 @property(nonatomic, strong)UILabel * numOfPerpleLabel;
 @property(nonatomic, strong)UIButton * goTuanButton;
 @property(nonatomic, strong)UITapGestureRecognizer * tuanTap;
+@property(nonatomic, strong)MyTimerView * myView;
 
 @property(nonatomic, strong)NSTimer * jishiTimer;
 @property(nonatomic, strong)UILabel * hourLabel;
@@ -274,7 +275,7 @@
     NSArray<Item_Bake *> * tuanArray = _model.item;
     float width = 130;
     float height = 130;
-    float bgHeight = 150;
+    float bgHeight = 170;
     float bordMargin  =3;
     for (NSInteger i = 0; i < tuanArray.count; i++) {
 #warning view上添加点击事件可以跳转二级页面
@@ -295,6 +296,7 @@
             _successPinPic.image = [UIImage imageNamed:@"successPinTuan"];
             [self.productBgView addSubview:_successPinPic];
         }
+        
         _numOfPerpleLabel = [[UILabel alloc] init];
         _numOfPerpleLabel.frame = CGRectMake(0, height-10, width, 15);
         _numOfPerpleLabel.textColor = [UIColor colorWithRed:0.65 green:0.65 blue:0.65 alpha:1.00];
@@ -307,19 +309,24 @@
         [self.productBgView addGestureRecognizer:_tuanTap];
 #warning 添加定时器，准备倒计时
         
+        [self initDateForShop:tuanArray[i] width:width height:bgHeight];
     }
     _pinTuanBgView.contentSize = CGSizeMake((bordMargin + width)*tuanArray.count, 0);
 }
 //显示倒计时的时间
--(void)initDateForShop{
-    
+-(void)initDateForShop:(Item_Bake *)bake width:(float)width height:(float)height{
+    _myView = [[MyTimerView alloc] initWithFrame:CGRectMake(30, height-30, width-60, 20)];
+    [_myView setTimerBeginTime:bake.groupBuyBeginTime endTime:bake.groupBuyEndTime];
+    [_myView setTimerView:[UIColor grayColor] font:[UIFont systemFontOfSize:11] bgColor:[UIColor colorWithRed:0.94 green:0.94 blue:0.96 alpha:1.00]];
+    [_productBgView addSubview:_myView];
 }
 -(void)goTuanAction:(UIButton *)btn{
     self.goToTuanVC();
 }
 -(void)tapTuanAction:(UITapGestureRecognizer *)tap{
-    UIScrollView * tuanView = (UIScrollView *)tap.view;
-    NSInteger index = tuanView.contentOffset.x/133;
+//    UIScrollView * tuanView = (UIScrollView *)tap.view;
+//    NSInteger index = tuanView.contentOffset.x/133;
+    NSInteger index = tap.view.x/133;
     NSArray * params = [self getParams:index];
     PinShoppingViewController * pinVC = [[PinShoppingViewController alloc] init];
     self.goToPinShoppingDetail(pinVC, params[0], params[1]);

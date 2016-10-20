@@ -26,6 +26,8 @@
 @property(nonatomic, strong)UILabel * shopLabel;
 @property(nonatomic, strong)UIView * bottomLineView;
 
+@property(nonatomic, strong)MyTimerView * myTimerView;
+
 @end
 
 @implementation TuanShopTableViewCell
@@ -101,7 +103,11 @@
     [self addSubview:_tuanNumLabel];
     
 //    右边两个label，要与当前时间得出
-    
+    _myTimerView = [[MyTimerView alloc] initWithFrame:CGRectMake(self.width-80, CGRectGetMaxY(_lineView.frame)+MARGIN, 70, 20)];
+//    先赋值，再整样式
+    [_myTimerView setTimerBeginTime:_myDic[@"beginTime"] endTime:_myDic[@"endTime"]];
+    [_myTimerView setTimerView:[UIColor grayColor] font:[UIFont systemFontOfSize:11] bgColor:[UIColor colorWithRed:0.94 green:0.94 blue:0.96 alpha:1.00]];
+    [self addSubview:_myTimerView];
     
     
     _bottomLineView = [[UIView alloc] init];

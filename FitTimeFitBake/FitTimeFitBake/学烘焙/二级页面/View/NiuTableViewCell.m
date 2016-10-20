@@ -23,9 +23,10 @@
 @property(nonatomic, strong)UILabel * titleLabel;
 @property(nonatomic, strong)UILabel * detailLabel;
 @property(nonatomic, strong)UIImageView * goPicView;
+@property(nonatomic, strong)UIView * downLine;
+@property(nonatomic, assign)NSInteger selNum;
 //类型的cell
-
-//下面的样式
+@property(nonatomic, strong)UIButton * typeButton;
 
 @end
 
@@ -48,7 +49,7 @@
         [self initForUpCellTypeView];
     }
     if (_downModel != nil) {
-       
+        
     }
 }
 #pragma mark
@@ -65,10 +66,47 @@
     _titleLabel.text = _niuModel.title;
     [self addSubview:_titleLabel];
     
-//    _detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)]
+    _detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(_picView.frame)+LEFT_MARGIN, CGRectGetMaxY(_titleLabel.frame), self.width-CGRectGetMaxX(_picView.frame)-2*LEFT_MARGIN, _picView.height-20)];
+    _detailLabel.numberOfLines = 0;
+    _detailLabel.textAlignment = NSTextAlignmentLeft;
+    _detailLabel.font = [UIFont systemFontOfSize:14];
+    _detailLabel.textColor = [UIColor grayColor];
+    _detailLabel.text = _niuModel.coverSummary;
+    [self addSubview:_detailLabel];
+    
+    _downLine = [[UIView alloc] initWithFrame:CGRectMake(0, self.height-5, self.width, 5)];
+    _downLine.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.96 alpha:1.00];
+    [self addSubview:_downLine];
 }
 -(void)initForUpCellTypeView{
-    
+    self.backgroundColor = [UIColor colorWithRed:0.94 green:0.94 blue:0.96 alpha:1.00];
+    float btnWidth = (self.width-2*3)/3;
+    float btnHeight = btnWidth*0.3;
+    for (NSInteger i = 0; i < _typeArray.count; i++) {
+        _typeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _typeButton.frame = CGRectMake(0+(btnWidth+2)*(i%3), (self.height-2*btnWidth*0.3-4)/2+(btnHeight+2)*(i/3), btnWidth, btnHeight);
+        _typeButton.backgroundColor = [UIColor whiteColor];
+        [_typeButton setTitle:_typeArray[i] forState:UIControlStateNormal];
+        _typeButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        [_typeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_typeButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+        [_typeButton setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        if (_selNum == i) {
+            _typeButton.selected = YES;
+        }
+        _typeButton.tag = 200+i;
+        [_typeButton addTarget:self action:@selector(changeType:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:_typeButton];
+    }
+}
+-(void)changeType:(UIButton *)btn{
+#warning 重新添加参数，更新内容
+    for (UIButton * bttn in self.subviews) {
+        bttn.selected = NO;
+    }
+    btn.selected = YES;
+    NSInteger index = btn.tag%10;
+    self.changeTypeBlock(index);
 }
 
 #pragma mark
@@ -76,15 +114,16 @@
 -(void)setUpModel:(NiuModel*)upModels{
     _niuModel = upModels;
 }
--(void)setUpArray:(NSArray *)titleArray{
+-(void)setUpArray:(NSArray *)titleArray index:(NSInteger)index{
     _typeArray = titleArray;
+    _selNum = index;
 }
 -(void)setDownModel:(BakeWayModel *)downModel{
     _downModel = downModel;
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    
     // Configure the view for the selected state
 }
 

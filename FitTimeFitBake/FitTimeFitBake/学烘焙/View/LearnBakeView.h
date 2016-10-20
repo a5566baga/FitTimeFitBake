@@ -37,7 +37,8 @@
 /**
  拼团的跳转
  */
-@property(nonatomic, strong)void(^goToTuanVCController)();
+//@property(nonatomic, strong)void(^goToTuanVCController)();
+
 @property(nonatomic, strong)void(^goToPinShoppingDetailController)(PinShoppingViewController * vc, NSString * type, NSString * idStr);
 
 /**
@@ -74,6 +75,5 @@
  牛气部落的跳转
  */
 @property(nonatomic, strong)void(^goToNiuMemberDetailController)(NiuDetailViewController * vc, NSString * type, NSString * idStr);
-
 
 @end

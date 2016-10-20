@@ -12,6 +12,8 @@
 
 @interface NiuTableViewCell : UITableViewCell
 
+@property(nonatomic, copy)void(^changeTypeBlock)(NSInteger index);
+
 /**
  *  上面电器推荐
  */
@@ -19,7 +21,7 @@
 /**
  *  类别
  */
--(void)setUpArray:(NSArray *)titleArray;
+-(void)setUpArray:(NSArray *)titleArray index:(NSInteger )index;
 /**
  * 下面的cell样式
  */

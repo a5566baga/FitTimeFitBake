@@ -27,7 +27,7 @@
 @property(nonatomic, copy)NSString * htmlStr;
 //tableView
 @property(nonatomic, strong)UITableView * tableView;
-
+@property(nonatomic, strong)UIButton * topButton;
 
 
 @end
@@ -63,6 +63,26 @@
 -(void)downloadDataFailed{
 #warning 错误页面
     ZZQLog(@"下载失败");
+}
+-(void)initForTopButton{
+    _topButton = [MyBackTopButton backButton];
+    _topButton.frame = CGRectMake(self.view.width-50, self.view.height*0.8, 40, 40);
+    [_topButton addTarget:self action:@selector(goTop:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_topButton];
+}
+-(void)goTop:(UIButton *)btn{
+    [_tableView setContentOffset:CGPointMake(0, 0) animated:YES];
+    [_topButton removeFromSuperview];
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (scrollView.contentOffset.y > 100) {
+        if (_topButton != nil) {
+            [_topButton removeFromSuperview];
+        }
+        [self initForTopButton];
+    }else{
+        [_topButton removeFromSuperview];
+    }
 }
 #pragma mark
 #pragma mark ========== 创建页面

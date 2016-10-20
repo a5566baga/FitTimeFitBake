@@ -37,6 +37,8 @@
 #import "MyBackTopButton.h"
 //错误提示信息
 #import "MyErrorView.h"
+//倒计时
+#import "MyTimerView.h"
 
 
 #endif /* PrefixHeader_pch */

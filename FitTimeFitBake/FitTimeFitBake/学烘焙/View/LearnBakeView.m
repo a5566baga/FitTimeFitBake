@@ -113,6 +113,11 @@
         mySelf.goToNiuMemberDetailController(niuVC, type, idStr);
     }];
     
+//    拼团
+    [_cell setGoToPinShoppingDetail:^(PinShoppingViewController * pinVC, NSString * type , NSString * idStr) {
+        mySelf.goToPinShoppingDetailController(pinVC, type, idStr);
+    }];
+    
     return _cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -121,7 +126,7 @@
     }else if ([_modelsArray[indexPath.section].title isEqualToString:@"分类食谱"]){
         return 180;
     }else if ([_modelsArray[indexPath.section].title isEqualToString:@"拼团"]){
-        return 200;
+        return 220;
     }else if ([_modelsArray[indexPath.section].title isEqualToString:@"精选菜单"]){
         return self.width/2.5+50+20;
     }else if ([_modelsArray[indexPath.section].title isEqualToString:@"发现"]){

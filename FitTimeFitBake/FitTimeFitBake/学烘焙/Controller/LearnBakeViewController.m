@@ -31,6 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
 //    创建一个view就行，根据数据内的type决定cell的样式
     _learnBakeView = [[LearnBakeView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, self.view.height-64-49)];
     [self.view addSubview:_learnBakeView];
@@ -67,6 +68,11 @@
         [weakSelf.navigationController pushViewController:niuVC animated:YES];
     }];
 //    拼团
+    [_learnBakeView setGoToPinShoppingDetailController:^(PinShoppingViewController * pinVC, NSString * typeStr, NSString * idStr) {
+        [pinVC setNetWorkParams:typeStr idStr:idStr];
+        [weakSelf.navigationController pushViewController:pinVC animated:YES];
+    }];
+    
 //    精选菜单
 //    热门榜单
 //    食谱达人
